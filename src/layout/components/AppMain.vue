@@ -1,8 +1,10 @@
 <template>
   <section class="app-main">
-    <transition name="fade-transform" mode="out-in">
-      <router-view :key="key" />
-    </transition>
+    <vue-scroll>
+      <transition name="fade-transform" mode="out-in">
+        <router-view :key="key" />
+      </transition>
+    </vue-scroll>
   </section>
 </template>
 
@@ -17,13 +19,23 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import "~@/styles/variables.scss";
+@media(min-width: 1800px) {
+    .app-main{
+       margin-top:110px !important;
+       height: calc(100% - 110px);
+    }
+  }
 .app-main {
-  /*50 = navbar  */
-  min-height: calc(100vh - 50px);
-  width: 100%;
-  position: relative;
-  overflow: hidden;
+  height: calc(100% - 85px);
+  width: calc(100% - #{$sideBarWidth} - 80px);
+  position: fixed;
+  overflow-y: auto;
+  margin-top:85px;
+  background: #fff;
+  border-radius:4px;
+
 }
 .fixed-header+.app-main {
   padding-top: 50px;

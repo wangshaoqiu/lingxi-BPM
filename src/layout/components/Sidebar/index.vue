@@ -4,8 +4,6 @@
     <el-scrollbar wrap-class="scrollbar-wrapper">
       <el-menu
         :default-active="activeMenu"
-        :collapse="isCollapse"
-        :background-color="variables.menuBg"
         :text-color="variables.menuText"
         :unique-opened="false"
         :active-text-color="variables.menuActiveText"
@@ -23,6 +21,7 @@ import { mapGetters } from 'vuex'
 import Logo from './Logo'
 import SidebarItem from './SidebarItem'
 import variables from '@/styles/variables.scss'
+import { getStorage } from '@/utils/auth'
 
 export default {
   components: { SidebarItem, Logo },
@@ -31,7 +30,16 @@ export default {
       'sidebar'
     ]),
     routes() {
-      return this.$router.options.routes
+      const routes = this.$router.options.routes
+      const ents = JSON.parse(getStorage('ents'))
+      for (let i = 0; i < this.$router.options.routes.length; i++) {
+        if (this.$router.options.routes[i].path == '/template') {
+          if (ents.superAdminFlag !== 1 && ents.adminFlag !== 1) {
+            routes[i].hidden = true
+          }
+        }
+      }
+      return routes
     },
     activeMenu() {
       const route = this.$route

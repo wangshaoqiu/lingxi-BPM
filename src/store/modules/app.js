@@ -1,11 +1,14 @@
 import Cookies from 'js-cookie'
+import { messageNum } from '@/api/message'
 
 const state = {
   sidebar: {
     opened: Cookies.get('sidebarStatus') ? !!+Cookies.get('sidebarStatus') : true,
     withoutAnimation: false
   },
-  device: 'desktop'
+  device: 'desktop',
+  msgNum: 0,
+  tastNum: 0
 }
 
 const mutations = {
@@ -25,6 +28,12 @@ const mutations = {
   },
   TOGGLE_DEVICE: (state, device) => {
     state.device = device
+  },
+  SET_MSGNUM: (state, num) => {
+    state.msgNum = num
+  },
+  SET_TASKNUM: (state, num) => {
+    state.tastNum = num
   }
 }
 
@@ -37,6 +46,13 @@ const actions = {
   },
   toggleDevice({ commit }, device) {
     commit('TOGGLE_DEVICE', device)
+  },
+  getMsgNum({ commit }) {
+    messageNum().then(res => {
+      // this.num = res.unreadMsgCnt
+      commit('SET_MSGNUM', res.unreadMsgCnt)
+      commit('SET_TASKNUM', res.approvingProjCnt)
+    })
   }
 }
 

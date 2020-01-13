@@ -3,12 +3,13 @@ import store from './store'
 import { Message } from 'element-ui'
 import NProgress from 'nprogress' // progress bar
 import 'nprogress/nprogress.css' // progress bar style
-import { getToken } from '@/utils/auth' // get token from cookie
+import { getToken, getStorage } from '@/utils/auth' // get token from cookie
 import getPageTitle from '@/utils/get-page-title'
 
 NProgress.configure({ showSpinner: false }) // NProgress Configuration
 
 const whiteList = ['/login'] // no redirect whitelist
+const ents = JSON.parse(getStorage('ents'))
 
 router.beforeEach(async(to, from, next) => {
   // start progress bar
@@ -25,6 +26,14 @@ router.beforeEach(async(to, from, next) => {
       // if is logged in, redirect to the home page
       next({ path: '/' })
       NProgress.done()
+    } else if (to.path === '/template') {
+      if ((ents.superAdminFlag && ents.superAdminFlag == 1) || (ents.adminFlag && ents.adminFlag == 1)) {
+        next()
+      } else {
+        next({ path: '/404' })
+      }
+
+      NProgress.done()
     } else {
       const hasGetUserInfo = store.getters.name
       if (hasGetUserInfo) {
@@ -32,8 +41,8 @@ router.beforeEach(async(to, from, next) => {
       } else {
         try {
           // get user info
-          await store.dispatch('user/getInfo')
-
+          // await store.dispatch('user/getInfo')
+          // next({ path: '/' })
           next()
         } catch (error) {
           // remove token and go to login page to re-login

@@ -1,85 +1,173 @@
-import axios from 'axios'
-import { MessageBox, Message } from 'element-ui'
-import store from '@/store'
-import { getToken } from '@/utils/auth'
 
-// create an axios instance
-const service = axios.create({
-  baseURL: process.env.VUE_APP_BASE_API, // url = base url + request url
-  // withCredentials: true, // send cookies when cross-domain requests
-  timeout: 5000 // request timeout
+/* eslint-disable no-console */
+import axios from 'axios'
+// import { Message } from 'element-ui'
+import ElementUI from 'element-ui'
+// import store from '@/store'
+import { getToken, setToken, getStorage, removeToken, removeStorage } from './auth'
+// import router from '../router'
+import qs from 'qs'
+// qs是为了传递参数为数组格式的时候格式化参数，非常有用
+
+axios.defaults.timeout = 10000
+axios.defaults.baseURL = process.env.VUE_APP_BASE_API2
+
+// request拦截器
+axios.interceptors.request.use(config => {
+  if (getToken()) {
+    const Token = ' bearer ' + getToken()
+    // config.headers['Authorization'] = Token // 让每个请求携带token--['X-Token']为自定义key 请根据实际情况自行修改
+    config.headers = {
+      'Content-Type': 'application/json;charset=UTF-8',
+      'X-App-Version': 'pc:samon-sass:wechat:0.0.1',
+      'Authorization': Token,
+      'Content-Security-Policy': 'no-referrer'
+    }
+  } else {
+    config.headers = {
+      'Content-Type': 'application/json;charset=UTF-8',
+      'X-App-Version': 'pc:samon-sass:wechat:0.0.1',
+      'Content-Security-Policy': 'no-referrer'
+    }
+  }
+  const ents = JSON.parse(getStorage('ents'))
+  if (ents !== '' && ents !== null) {
+    config.headers['X-Ent'] = ents.entId
+  }
+
+  return config
+}, error => {
+  Promise.reject(error)
 })
 
-// request interceptor
-service.interceptors.request.use(
-  config => {
-    // do something before request is sent
+// respone拦截器
+axios.interceptors.response.use(
 
-    if (store.getters.token) {
-      // let each request carry token
-      // ['X-Token'] is a custom headers key
-      // please modify it according to the actual situation
-      config.headers['X-Token'] = getToken()
-    }
-    return config
-  },
-  error => {
-    // do something with request error
-    console.log(error) // for debug
-    return Promise.reject(error)
-  }
-)
-
-// response interceptor
-service.interceptors.response.use(
-  /**
-   * If you want to get http information such as headers or status
-   * Please return  response => response
-  */
-
-  /**
-   * Determine the request status by custom code
-   * Here is just an example
-   * You can also judge the status by HTTP Status Code
-   */
   response => {
-    const res = response.data
-
-    // if the custom code is not 20000, it is judged as an error.
-    if (res.code !== 20000) {
-      Message({
-        message: res.message || 'Error',
-        type: 'error',
-        duration: 5 * 1000
+    if (response.data.code === 401) {
+      removeToken()
+      removeStorage('ents')
+      removeStorage('userInfo')
+      this.$router.push({
+        path: '/login'
       })
-
-      // 50008: Illegal token; 50012: Other clients logged in; 50014: Token expired;
-      if (res.code === 50008 || res.code === 50012 || res.code === 50014) {
-        // to re-login
-        MessageBox.confirm('You have been logged out, you can cancel to stay on this page, or log in again', 'Confirm logout', {
-          confirmButtonText: 'Re-Login',
-          cancelButtonText: 'Cancel',
-          type: 'warning'
-        }).then(() => {
-          store.dispatch('user/resetToken').then(() => {
-            location.reload()
-          })
-        })
-      }
-      return Promise.reject(new Error(res.message || 'Error'))
-    } else {
-      return res
     }
+    if (response.headers['x-token']) {
+      const token = response.headers['x-token']
+      setToken(token)
+    }
+    return response
   },
   error => {
-    console.log('err' + error) // for debug
-    Message({
-      message: error.message,
-      type: 'error',
-      duration: 5 * 1000
-    })
+    if (error.response) {
+      ElementUI.Notification({
+        title: '错误',
+        message: error.response.data.message,
+        type: 'error'
+      })
+    }
+
     return Promise.reject(error)
   }
 )
 
-export default service
+export default axios
+
+export function get(url, params) {
+  return new Promise((resolve, reject) => {
+    axios.defaults.baseURL = process.env.VUE_APP_BASE_API2
+    axios.get(url, {
+      params: params,
+      paramsSerializer: params => {
+        return qs.stringify(params, { indices: false })
+      }
+    })
+      .then(res => {
+        resolve(res.data)
+      })
+      .catch(err => {
+        reject(err.data)
+      })
+  })
+}
+
+export function get2(url, params) {
+  return new Promise((resolve, reject) => {
+    axios.defaults.baseURL = process.env.VUE_APP_BASE_API
+    axios.get(url, {
+      params: params,
+      paramsSerializer: params => {
+        return qs.stringify(params, { indices: false })
+      }
+    })
+      .then(res => {
+        resolve(res.data)
+      })
+      .catch(err => {
+        reject(err.data)
+      })
+  })
+}
+
+// post是功能模块api
+export function post(url, params) {
+  axios.defaults.baseURL = process.env.VUE_APP_BASE_API2
+  return new Promise((resolve, reject) => {
+    // const token = getToken()
+    // params.token = token
+
+    axios.post(url, params)
+      .then(res => {
+        resolve(res)
+      })
+      .catch(err => {
+        // console.log(err.response)
+        reject(err)
+      })
+  })
+}
+
+// post2是登录模块api
+
+export function post2(url, params) {
+  axios.defaults.baseURL = process.env.VUE_APP_BASE_API
+
+  return new Promise((resolve, reject) => {
+    // const token = getToken()
+    // params.token = token
+
+    axios.post(url, params)
+      .then(res => {
+        resolve(res)
+      })
+      .catch(err => {
+        reject(err)
+      })
+  })
+}
+
+export function put(url, params) {
+  axios.defaults.baseURL = process.env.VUE_APP_BASE_API2
+  return new Promise((resolve, reject) => {
+    axios.put(url, params)
+      .then(res => {
+        resolve(res)
+      })
+      .catch(err => {
+        reject(err.data)
+      })
+  })
+}
+
+export function Delete(url, param) {
+  axios.defaults.baseURL = process.env.VUE_APP_BASE_API2
+  return new Promise((resolve, reject) => {
+    axios.delete(url, { data: param })
+      .then(res => {
+        resolve(res)
+      })
+      .catch(err => {
+        reject(err.data)
+      })
+  })
+}

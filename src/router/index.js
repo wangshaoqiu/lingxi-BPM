@@ -5,6 +5,8 @@ Vue.use(Router)
 
 /* Layout */
 import Layout from '@/layout'
+import Layout2 from '@/layout/index2.vue'
+import Layout3 from '@/layout/index3.vue'
 
 /**
  * Note: sub-menu only appear when route children.length >= 1
@@ -45,118 +47,124 @@ export const constantRoutes = [
 
   {
     path: '/',
+    redirect: '/projects',
     component: Layout,
-    redirect: '/dashboard',
-    children: [{
-      path: 'dashboard',
-      name: 'Dashboard',
-      component: () => import('@/views/dashboard/index'),
-      meta: { title: 'Dashboard', icon: 'dashboard' }
-    }]
-  },
-
-  {
-    path: '/example',
-    component: Layout,
-    redirect: '/example/table',
-    name: 'Example',
-    meta: { title: 'Example', icon: 'example' },
+    meta: { title: '全部项目' },
     children: [
       {
-        path: 'table',
-        name: 'Table',
-        component: () => import('@/views/table/index'),
-        meta: { title: 'Table', icon: 'table' }
-      },
-      {
-        path: 'tree',
-        name: 'Tree',
-        component: () => import('@/views/tree/index'),
-        meta: { title: 'Tree', icon: 'tree' }
+        path: '/projects',
+        component: () => import('@/views/projects/index'),
+        meta: { title: '全部项目', icon: 'icon-全部项目' }
       }
     ]
   },
-
   {
-    path: '/form',
-    component: Layout,
+    path: '/detail',
+    redirect: '/detail',
+    component: Layout3,
+    meta: { title: '全部项目' },
     children: [
       {
-        path: 'index',
-        name: 'Form',
-        component: () => import('@/views/form/index'),
-        meta: { title: 'Form', icon: 'form' }
+        path: '/detail',
+        component: () => import('@/views/projects/detail'),
+        meta: { title: '项目详情' },
+        hidden: true
+      }
+    ],
+    hidden: true
+  },
+  {
+    path: '/projectList',
+    redirect: '/projectList',
+    component: Layout3,
+    children: [
+      {
+        path: '/projectList',
+        component: () => import('@/views/projects/projectList')
+      }
+    ],
+    hidden: true
+  },
+  {
+    path: '/participation',
+    redirect: '/participation',
+    component: Layout,
+    meta: { title: '我参与的' },
+    children: [
+      {
+        path: '/participation',
+        component: () => import('@/views/participation/index'),
+        meta: { title: '我参与的', icon: 'icon-我参与的' }
       }
     ]
   },
-
   {
-    path: '/nested',
+    path: '/pigeonhole',
+    redirect: '/pigeonhole',
     component: Layout,
-    redirect: '/nested/menu1',
-    name: 'Nested',
-    meta: {
-      title: 'Nested',
-      icon: 'nested'
-    },
+    meta: { title: '归档项目' },
     children: [
       {
-        path: 'menu1',
-        component: () => import('@/views/nested/menu1/index'), // Parent router-view
-        name: 'Menu1',
-        meta: { title: 'Menu1' },
-        children: [
-          {
-            path: 'menu1-1',
-            component: () => import('@/views/nested/menu1/menu1-1'),
-            name: 'Menu1-1',
-            meta: { title: 'Menu1-1' }
-          },
-          {
-            path: 'menu1-2',
-            component: () => import('@/views/nested/menu1/menu1-2'),
-            name: 'Menu1-2',
-            meta: { title: 'Menu1-2' },
-            children: [
-              {
-                path: 'menu1-2-1',
-                component: () => import('@/views/nested/menu1/menu1-2/menu1-2-1'),
-                name: 'Menu1-2-1',
-                meta: { title: 'Menu1-2-1' }
-              },
-              {
-                path: 'menu1-2-2',
-                component: () => import('@/views/nested/menu1/menu1-2/menu1-2-2'),
-                name: 'Menu1-2-2',
-                meta: { title: 'Menu1-2-2' }
-              }
-            ]
-          },
-          {
-            path: 'menu1-3',
-            component: () => import('@/views/nested/menu1/menu1-3'),
-            name: 'Menu1-3',
-            meta: { title: 'Menu1-3' }
-          }
-        ]
-      },
-      {
-        path: 'menu2',
-        component: () => import('@/views/nested/menu2/index'),
-        meta: { title: 'menu2' }
+        path: '/pigeonhole',
+        component: () => import('@/views/pigeonhole/index'),
+        meta: { title: '归档项目', icon: 'icon-归档文件' }
       }
     ]
   },
-
   {
-    path: 'external-link',
+    path: '/template',
+    redirect: '/template',
     component: Layout,
+    meta: { title: '模板管理' },
     children: [
       {
-        path: 'https://panjiachen.github.io/vue-element-admin-site/#/',
-        meta: { title: 'External Link', icon: 'link' }
+        path: '/template',
+        component: () => import('@/views/template/index'),
+        meta: { title: '模板管理', icon: 'icon-模板管理', roles: ['admin'] }
       }
+
     ]
+  },
+  {
+    path: '/addTemplate',
+    redirect: '/addTemplate',
+    component: Layout3,
+    meta: { title: '模板管理' },
+    children: [
+      {
+        path: '/addTemplate',
+        component: () => import('@/views/template/addTemplate'),
+        meta: { title: '新增模板' },
+        hidden: true
+      }
+
+    ],
+    hidden: true
+  },
+  {
+    path: '/editTemplate',
+    redirect: '/editTemplate',
+    component: Layout3,
+    meta: { title: '编辑模板' },
+    children: [
+      {
+        path: '/editTemplate',
+        component: () => import('@/views/template/editTemplate')
+      }
+    ],
+    hidden: true
+  },
+  {
+    path: '/message',
+    component: Layout2,
+    meta: { title: '消息中心' },
+    children: [
+      {
+        path: '/message',
+        component: () => import('@/views/message')
+      }
+    ],
+    hidden: true
   },
 
   // 404 page must be placed at the end !!!
@@ -178,3 +186,20 @@ export function resetRouter() {
 }
 
 export default router
+
+export const asyncRouterMap = [
+  {
+    path: '/template',
+    redirect: '/template',
+    component: Layout,
+    meta: { title: '模板管理' },
+    children: [
+      {
+        path: '/template',
+        component: () => import('@/views/template/index'),
+        meta: { title: '模板管理', icon: 'icon-模板管理', roles: ['admin'] }
+      }
+
+    ]
+  }
+]
