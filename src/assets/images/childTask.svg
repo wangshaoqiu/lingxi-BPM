@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>子任务</title>
+    <desc>Created with Sketch.</desc>
+    <g id="子任务" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组" transform="translate(1.000000, 0.706456)" stroke="#999999" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3.63554333,10.6621445 C1.4687175,11.1720875 0,12.1593076 0,13.2935438 C0,14.950398 3.13400675,16.2935438 7,16.2935438 C10.8659932,16.2935438 14,14.950398 14,13.2935438 C14,11.993649 12.0709313,10.8868506 9.37276814,10.4702803" id="路径"></path>
+            <polyline id="路径-2" points="5.68684758 14.1781466 6.50846788 7.93230781 7.55193783 1.77635684e-15 16.3979061 1.20103328 14.6344059 4.95391339 15.2357494 9.12112567 7 7.93230781"></polyline>
+        </g>
+        <rect id="矩形" x="0" y="0" width="18" height="18"></rect>
+    </g>
+</svg>

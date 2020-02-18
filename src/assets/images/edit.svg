@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>编辑</title>
+    <desc>Created with Sketch.</desc>
+    <g id="编辑" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="矩形" x="1" y="1" width="16" height="16"></rect>
+        <g id="编组-2" transform="translate(10.960155, 5.596194) rotate(-315.000000) translate(-10.960155, -5.596194) translate(8.960155, 5.096194)"></g>
+        <path d="M5.72591259,1.006929 C5.44977022,1.006929 5.22591259,1.23078663 5.22591259,1.506929 L5.22591259,13.146507 C5.22591259,13.2629805 5.26657513,13.3757998 5.34088165,13.4654916 L6.83076437,15.2638572 C6.85005846,15.2871462 6.87142573,15.3086366 6.89460344,15.3280642 C7.1062343,15.5054536 7.42159751,15.4776954 7.59898688,15.2660645 L9.10910417,13.4644491 C9.18455904,13.3744291 9.22591259,13.2607179 9.22591259,13.1432572 L9.22591259,1.506929 C9.22591259,1.23078663 9.00205497,1.006929 8.72591259,1.006929 L5.72591259,1.006929 Z" id="矩形" stroke="#999999" transform="translate(7.225913, 8.225913) rotate(-315.000000) translate(-7.225913, -8.225913) "></path>
+        <rect id="矩形" fill="#999999" x="1" y="15" width="16" height="1" rx="0.5"></rect>
+        <rect id="矩形" fill="#999999" transform="translate(10.179971, 5.274696) rotate(-315.000000) translate(-10.179971, -5.274696) " x="8.17997105" y="4.77469596" width="4" height="1"></rect>
+    </g>
+</svg>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>锁（开）</title>
+    <desc>Created with Sketch.</desc>
+    <g id="锁（开）" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="矩形" stroke="#999999" x="1.5" y="5.5" width="12" height="9" rx="3"></rect>
+        <path d="M4.35417047,2.48680069 C4.4310546,2.32963193 4.51937022,2.17907526 4.61803418,2.0362138 C5.24947489,1.12191298 6.30477222,0.522799491 7.5,0.522799491 C9.43299662,0.522799491 11,2.08980287 11,4.02279949 L11,5.44103387" id="路径" stroke="#999999" stroke-linecap="round"></path>
+        <rect id="矩形" stroke="#999999" x="7.5" y="9.5" width="1" height="2" rx="0.5"></rect>
+    </g>
+</svg>

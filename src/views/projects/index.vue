@@ -71,7 +71,7 @@
                     class="icon_select"
                     src="../../assets/images/selected.png"
                     alt
-                  >
+                  />
                   <div v-if="sub.coverUrl!==''" class="item_wrap" :style="{backgroundImage:'url('+sub.coverUrl+')'}">
                     <div class="mask" />
                     <div class="title2">{{ sub.name }}</div>
@@ -106,7 +106,7 @@
                 <div class="productFlow">项目流程</div>
                 <div v-for="(item,index) in flowNodes" :key="index" class="flow">
                   <div class="flowname">{{ item.name }}</div>
-                  <img src="../../assets/images/arrow.png" alt>
+                  <img src="../../assets/images/arrow.png" alt />
                 </div>
               </div>
             </vue-scroll>
@@ -123,7 +123,7 @@
                 class="name-input mt10"
                 type="text"
                 placeholder="请输入项目名称"
-              >
+              />
               <div class="period font14 mt30" style="margin-left:40px;">项目周期</div>
               <div class="startTime mt10">
                 <el-date-picker
@@ -149,8 +149,8 @@
           </div>
           <div class="dialog-foot flex justify-between align-center">
             <div class="footLeft flex align-center" @click="checkPublic">
-              <img v-if="addParam.publicFlag===1" src="../../assets/images/lock2.png" alt>
-              <img v-if="addParam.publicFlag===0" src="../../assets/images/lock1.png" alt>
+              <img v-if="addParam.publicFlag===1" src="../../assets/images/lock2.png" alt />
+              <img v-if="addParam.publicFlag===0" src="../../assets/images/lock1.png" alt />
               <div class="font14 publicName">{{ addParam.publicFlag===1?'项目公开':'仅参与人可见' }}</div>
             </div>
             <div class="sureBtn" style="margin-left:0" @click="sureAdd">确认</div>

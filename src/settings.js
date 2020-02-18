@@ -1,6 +1,6 @@
 module.exports = {
 
-  title: '希盟工作云平台',
+  title: '灵犀BPM',
 
   /**
    * @type {boolean} true | false

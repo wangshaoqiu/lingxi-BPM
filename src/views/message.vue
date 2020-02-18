@@ -8,14 +8,14 @@
         <div class="more_icon">
           <el-dropdown placement="bottom-start" trigger="click">
             <div>
-              <img class="more-nohover" src="../assets/images/more.png" alt>
-              <img class="more-hover" src="../assets/images/more2.png" alt>
+              <img class="more-nohover" src="../assets/images/more.svg" alt />
+              <img class="more-hover" src="../assets/images/more2.svg" alt />
             </div>
             <el-dropdown-menu slot="dropdown" class="dropdown2">
               <div @click="select(1)">
                 <el-dropdown-item>
                   <div class="flex align-center">
-                    <img src="../assets/images/clear.png" alt>
+                    <img src="../assets/images/clear.png" alt />
                     <div class="Font666" style="margin-left:10px;">全标已读</div>
                   </div>
                 </el-dropdown-item>
@@ -23,7 +23,7 @@
               <div @click="select(2)">
                 <el-dropdown-item>
                   <div class="flex align-center">
-                    <img src="../assets/images/delete4.png" alt>
+                    <img src="../assets/images/delete4.png" alt />
                     <div class="Font666" style="margin-left:10px;">删除已读</div>
                   </div>
                 </el-dropdown-item>
@@ -34,19 +34,19 @@
 
       </div>
       <div class="main">
-        <div v-for="(item,index) in detail.list" :key="index" class="msgItem" @click="markRead(item.id)">
+        <div v-for="(item,index) in detail.list" :key="index" class="msgItem" @click="markRead(item.id,item.projectId)">
           <div class="line1 flex justify-between align-center">
             <div class="flex">
               <div class="title">{{ item.title }}</div>
               <div v-if="item.readFlag == 0" class="mark" />
               <div class="time Font999" :style="{marginLeft:item.readFlag == 0?'28px':'40px'}">{{ item.timeStr }}</div>
             </div>
-            <img class="transBig" src="../assets/images/delete3.png" alt="" @click="delMsg(item.id)">
+            <img class="transBig" src="../assets/images/delete3.svg" alt="" @click="delMsg(item.id)" />
           </div>
           <div class="line2 Font333">{{ item.content }}</div>
           <div class="line3 Font999">{{ item.desc }}</div>
         </div>
-        <img v-if="showLoading&&detail.more" class="loading" src="../assets/images/loading.gif" alt="">
+        <img v-if="showLoading&&detail.more" class="loading" src="../assets/images/loading.gif" alt="" />
       </div>
     </vue-scroll>
   </div>
@@ -86,11 +86,13 @@ export default {
         this.getMessage()
       })
     },
-    markRead(id) {
+    markRead(id, projectId) {
       markRead(id).then(() => {
         this.getMessage()
         this.$store.dispatch('app/getMsgNum')
       })
+      const routeUrl = this.$router.resolve({ path: '/detail', query: { id: projectId }})
+      window.open(routeUrl.href, '_blank')
     },
     select(index) {
       if (index === 1) {
@@ -101,6 +103,7 @@ export default {
             type: 'success'
           })
           this.getMessage()
+          this.$store.dispatch('app/getMsgNum')
         })
       } else if (index === 2) {
         delAllMsg().then(res => {

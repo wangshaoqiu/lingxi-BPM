@@ -14,25 +14,25 @@
                 <div class="mask" />
                 <div class="title">{{ sub.name }}</div>
                 <div class="content">{{ sub.briefIntro }}</div>
-                <img src="../../assets/images/delete.png" alt @click.stop="showDel(sub.id)">
+                <img src="../../assets/images/delete.png" alt @click.stop="showDel(sub.id)" />
               </div>
               <div v-if="sub.coverUrl==''&&index==0" class="item_wrap" :style="{backgroundImage:`url(${require('../../assets/images/manufacture.png')})`}">
                 <div class="mask" />
                 <div class="title">{{ sub.name }}</div>
                 <div class="content">{{ sub.briefIntro }}</div>
-                <img src="../../assets/images/delete.png" alt @click.stop="showDel(sub.id)">
+                <img src="../../assets/images/delete.png" alt @click.stop="showDel(sub.id)" />
               </div>
               <div v-if="sub.coverUrl==''&&index==1" class="item_wrap" :style="{backgroundImage:`url(${require('../../assets/images/sell.png')})`}">
                 <div class="mask" />
                 <div class="title">{{ sub.name }}</div>
                 <div class="content">{{ sub.briefIntro }}</div>
-                <img src="../../assets/images/delete.png" alt @click.stop="showDel(sub.id)">
+                <img src="../../assets/images/delete.png" alt @click.stop="showDel(sub.id)" />
               </div>
               <div v-if="sub.coverUrl==''&&index==2" class="item_wrap" :style="{backgroundImage:`url(${require('../../assets/images/fix.png')})`}">
                 <div class="mask" />
                 <div class="title">{{ sub.name }}</div>
                 <div class="content">{{ sub.briefIntro }}</div>
-                <img src="../../assets/images/delete.png" alt @click.stop="showDel(sub.id)">
+                <img src="../../assets/images/delete.png" alt @click.stop="showDel(sub.id)" />
               </div>
             </div>
           </div>
@@ -40,15 +40,7 @@
       </div>
     </vue-scroll>
 
-    <el-dialog
-      title="提示"
-      :visible.sync="delDialog"
-      width="525px"
-      :show-close="show_close"
-      center
-      class="text-center del-dialog"
-      :append-to-body="true"
-    >
+    <el-dialog title="提示" :visible.sync="delDialog" width="525px" :show-close="show_close" center class="text-center del-dialog" :append-to-body="true">
       <div class="text-center">
         <span>确认删除该模板吗？</span>
       </div>
@@ -68,7 +60,7 @@ export default {
   directives: {
     waves
   },
-  data() {
+  data () {
     return {
       visible: false,
       list: [],
@@ -77,11 +69,11 @@ export default {
       selectId: ''
     }
   },
-  created() {
+  created () {
     this.getList()
   },
   methods: {
-    sureDel() {
+    sureDel () {
       delTemplate(this.selectId).then(res => {
         this.$notify({
           title: '成功',
@@ -92,26 +84,26 @@ export default {
       })
       this.delDialog = false
     },
-    cancelDel() {
+    cancelDel () {
 
     },
-    goEdit(id) {
+    goEdit (id) {
       this.$router.push({ path: 'editTemplate', query: {
         id: id
       }})
     },
-    showDel(id) {
+    showDel (id) {
       this.delDialog = true
       this.selectId = id
     },
-    gotoAdd() {
+    gotoAdd () {
       setTimeout(() => {
         this.$router.push({
           path: '/addTemplate'
         })
       }, 180)
     },
-    getList() {
+    getList () {
       templateList().then(res => {
         this.list = res
       })
@@ -121,7 +113,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~@/styles/variables.scss";
+@import '~@/styles/variables.scss';
 .container {
   width: 100%;
   height: 100%;
@@ -131,26 +123,26 @@ export default {
     height: 60px;
     border-bottom: 1 * $bg1px solid #eee;
     padding: 0 25 * $bg1px;
-    @media(min-width:1800px) {
-        &{
-          height: 75px;
-        }
+    @media (min-width: 1800px) {
+      & {
+        height: 75px;
       }
+    }
     .headerLeft {
       font-size: 16px;
       font-family: PingFangSC-Medium, PingFang SC;
       font-weight: 500;
       color: rgba(51, 51, 51, 1);
-      @media(min-width:1800px) {
-        &{
-          font-size:18px;
+      @media (min-width: 1800px) {
+        & {
+          font-size: 18px;
         }
       }
     }
     .createBtn {
       width: 90px;
       height: 35px;
-      background: #53B4B3;
+      background: #53b4b3;
       border-radius: 4px;
       font-size: 14px;
       font-family: PingFangSC-Medium, PingFang SC;
@@ -171,11 +163,11 @@ export default {
         font-family: PingFangSC-Medium, PingFang SC;
         font-weight: 500;
         color: rgba(51, 51, 51, 1);
-        @media(min-width:1800px) {
-        &{
-          font-size:16px;
+        @media (min-width: 1800px) {
+          & {
+            font-size: 16px;
+          }
         }
-      }
       }
       .items {
         flex-wrap: wrap;
@@ -194,7 +186,7 @@ export default {
             height: 100%;
             overflow: hidden;
             z-index: 9;
-            border-radius:4px;
+            border-radius: 4px;
             cursor: pointer;
             &:hover .mask {
               background: linear-gradient(
@@ -242,11 +234,11 @@ export default {
               -moz-transition-timing-function: ease-in-out; /* Firefox 4 */
               -webkit-transition-timing-function: ease-in-out; /* Safari 和 Chrome */
               -o-transition-timing-function: ease-in-out; /* Opera */
-              @media(min-width:1800px) {
-        &{
-          font-size:16px;
-        }
-      }
+              @media (min-width: 1800px) {
+                & {
+                  font-size: 16px;
+                }
+              }
             }
             .content {
               font-size: 12px;

@@ -6,7 +6,7 @@ function resolve(dir) {
   return path.join(__dirname, dir)
 }
 
-const name = '希盟工作云平台' // page title
+const name = '灵犀BPM' // page title
 // const name = 'neets-运营管理'
 // If your port is set to 80,
 // use administrator privileges to execute the command line.

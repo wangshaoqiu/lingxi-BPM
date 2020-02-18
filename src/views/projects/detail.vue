@@ -147,7 +147,7 @@
   height: 14px;
   margin-left: 25px;
   cursor: pointer;
-      display: none;
+  display: none;
 }
 .degree {
   height: 24px;
@@ -159,7 +159,7 @@
   text-align: center;
   line-height: 24px;
   cursor: pointer;
-  padding:0 10px;
+  padding: 0 10px;
 }
 .degree1 {
   background: rgba(183, 186, 206, 1);
@@ -199,7 +199,7 @@
   width: 104px;
   // height: 137px;
   box-shadow: 0px 0px 8px 7px rgba(0, 0, 0, 0.04);
-  padding:16px 0;
+  padding: 16px 0;
 }
 .dropdown2 {
   width: 180px;
@@ -224,7 +224,7 @@
 }
 .dropdown1 div:first-child .el-dropdown-menu__item {
   background: #f45b5b;
-  margin-top:0;
+  margin-top: 0;
 }
 .dropdown1 div:nth-last-child(2) .el-dropdown-menu__item {
   background: rgba(183, 186, 206, 1);
@@ -253,7 +253,7 @@
   background: rgba(248, 248, 248, 1);
   height: 100%;
   overflow-x: auto;
-    overflow-y: hidden;
+  overflow-y: hidden;
 
   .header {
     width: 100%;
@@ -267,7 +267,7 @@
       right: 100px;
       width: 140px;
       height: 140px;
-      z-index:9999;
+      z-index: 9999;
     }
     .more_icon {
       color: #666;
@@ -291,7 +291,7 @@
       overflow: auto;
       // padding-bottom: 200px;
       .nowLink {
-        margin-top:13px;
+        margin-top: 13px;
         img {
           width: 18px;
           height: 18px;
@@ -302,18 +302,18 @@
         .nowLink_value {
           margin-left: 85px;
         }
-        .tag{
-          width:56px;
-height:24px;
-border-radius:14px;
-border:1px solid rgba(83,180,179,1);
-font-size:12px;
-font-family:PingFangSC-Regular,PingFang SC;
-font-weight:400;
-color:rgba(83,180,179,1);
-text-align: center;
-line-height: 24px;
-margin-left:20px;
+        .tag {
+          width: 56px;
+          height: 24px;
+          border-radius: 14px;
+          border: 1px solid rgba(83, 180, 179, 1);
+          font-size: 12px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: rgba(83, 180, 179, 1);
+          text-align: center;
+          line-height: 24px;
+          margin-left: 20px;
         }
       }
       .period {
@@ -336,7 +336,7 @@ margin-left:20px;
         border: 1px solid rgba(238, 238, 238, 1);
         overflow-y: auto; // max-height: 265px;
         border-radius: 4px;
-        padding:15px 0;
+        padding: 15px 0;
 
         // height: 265px;
         .taskItem {
@@ -344,22 +344,22 @@ margin-left:20px;
           padding: 0 20px 0 30px;
           cursor: pointer;
 
-          &:first-child{
-          margin-top:0;
-        }
+          &:first-child {
+            margin-top: 0;
+          }
 
-          &:hover .noShow{
+          &:hover .noShow {
             display: block;
           }
           .taskItem1 {
             width: calc(100% - 80px);
             max-width: 426px;
-            margin-top:6px;
+            margin-top: 6px;
           }
         }
         .childTask_input {
           // margin-top: 10px;
-          margin-bottom:10px;
+          margin-bottom: 10px;
           padding: 0 20px 0 20px;
           .input_wrap {
             width: 86.07%;
@@ -373,8 +373,8 @@ margin-left:20px;
               outline: none;
               padding-left: 10px;
               border: 1px solid rgba(238, 238, 238, 1);
-              &:focus{
-                border:1px solid #53b4b3;
+              &:focus {
+                border: 1px solid #53b4b3;
               }
               &::-webkit-input-placeholder {
                 /* WebKit, Blink, Edge */
@@ -408,7 +408,7 @@ margin-left:20px;
           }
           .taskItem2 {
             margin-left: 31px;
-            width:64px;
+            width: 64px;
             .taskHead {
               width: 25px;
               height: 25px;
@@ -454,10 +454,10 @@ margin-left:20px;
             .cancelAddBtn {
               height: 30px;
               line-height: 30px;
-              width:70px;
-border-radius:4px;
-border:1px solid rgba(204,204,204,1);
-text-align: center;
+              width: 70px;
+              border-radius: 4px;
+              border: 1px solid rgba(204, 204, 204, 1);
+              text-align: center;
               cursor: pointer;
             }
           }
@@ -532,40 +532,37 @@ text-align: center;
           height: 36px;
           line-height: 36px;
           margin-bottom: 10px;
-          font-size:12px;
+          font-size: 12px;
         }
         img {
           width: 36px;
           height: 36px;
           cursor: pointer;
         }
-        .loadMore{
+        .loadMore {
           position: absolute;
-          top:0;
-          right:8px;
-          z-index:999;
+          top: 0;
+          right: 8px;
+          z-index: 999;
         }
       }
-      .projectNews_wrap{
+      .projectNews_wrap {
         padding: 20px 30px;
-        &:nth-child(1){
-          margin-top:-25px;
+        &:nth-child(1) {
+          margin-top: -25px;
         }
-
       }
-
     }
-
   }
 }
-.loading{
-          width:20px;
-          height: 20px;
-          position: absolute;
-          left: 50%;
-          margin-left:-10px;
-          // top:3px;
-        }
+.loading {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  margin-left: -10px;
+  // top:3px;
+}
 .addPanel {
   width: 430px;
   height: 360px;
@@ -593,7 +590,7 @@ text-align: center;
     .panleftItem2 {
       width: 125px;
       height: 40px;
-      background: rgba(83,180,179, 0.09);
+      background: rgba(83, 180, 179, 0.09);
       border-radius: 4px;
       color: rgba(51, 51, 51, 1);
       margin: 0 auto;
@@ -622,7 +619,7 @@ text-align: center;
         height: 18px;
         border-radius: 9px;
         border: 1px solid #53b4b3;
-        color:#53b4b3;
+        color: #53b4b3;
         font-size: 11px;
         text-align: center;
         line-height: 18px;
@@ -701,8 +698,8 @@ text-align: center;
       position: absolute;
       top: 20px;
       right: 20px;
-      &:hover{
-        color:#53b4b3 !important;
+      &:hover {
+        color: #53b4b3 !important;
       }
     }
   }
@@ -730,7 +727,7 @@ text-align: center;
       display: -webkit-box;
       -webkit-line-clamp: 1;
       -webkit-box-orient: vertical;
-      @media(max-width:1300px){
+      @media (max-width: 1300px) {
         width: 308px;
       }
     }
@@ -809,171 +806,171 @@ text-align: center;
     text-align: center;
   }
 }
-.mt40{
-  margin-top:40px;
+.mt40 {
+  margin-top: 40px;
 }
 
-.mt30{
-  margin-top:30px;
+.mt30 {
+  margin-top: 30px;
 }
-.mt25{
-  margin-top:25px;
+.mt25 {
+  margin-top: 25px;
 }
-.mt20{
-  margin-top:20px;
+.mt20 {
+  margin-top: 20px;
 }
-.mt15{
-  margin-top:15px;
+.mt15 {
+  margin-top: 15px;
 }
-.mt10{
-  margin-top:10px;
+.mt10 {
+  margin-top: 10px;
 }
-.pt30{
-  padding-top:30px;
+.pt30 {
+  padding-top: 30px;
 }
-.pt20{
-  padding-top:20px;
+.pt20 {
+  padding-top: 20px;
 }
-.pl30{
-  padding-left:30px;
+.pl30 {
+  padding-left: 30px;
 }
-.pl25{
-  padding-left:25px;
+.pl25 {
+  padding-left: 25px;
 }
-.pr20{
-  padding-right:20px;
+.pr20 {
+  padding-right: 20px;
 }
-.pb30{
+.pb30 {
   padding-bottom: 30px;
 }
-.pb15{
+.pb15 {
   padding-bottom: 15px;
 }
-.ml40{
-  margin-left:40px;
+.ml40 {
+  margin-left: 40px;
 }
-.ml35{
-  margin-left:35px;
+.ml35 {
+  margin-left: 35px;
 }
-.ml10{
-  margin-left:10px;
+.ml10 {
+  margin-left: 10px;
 }
-.ml20{
-  margin-left:20px;
+.ml20 {
+  margin-left: 20px;
 }
-.ml25{
-  margin-left:25px;
+.ml25 {
+  margin-left: 25px;
 }
-.ml15{
-  margin-left:15px;
+.ml15 {
+  margin-left: 15px;
 }
-.ml30{
-  margin-left:30px;
+.ml30 {
+  margin-left: 30px;
 }
-.mr30{
-  margin-right:30px;
+.mr30 {
+  margin-right: 30px;
 }
-.pd30{
-  padding:30px;
+.pd30 {
+  padding: 30px;
 }
-.pd10{
-  padding:10px;
+.pd10 {
+  padding: 10px;
 }
 .mainFoot {
-      background: rgba(255, 255, 255, 1);
-      box-shadow: 0px -1px 10px 0px rgba(0, 0, 0, 0.05);
-      position: absolute;
-      left:50%;
-      margin-left:-650px;
-      bottom: 0;
-      height: 76px;
-      width: 1300px;
-      .rejectReason {
-        width: 55.38%;
-        height: 80px;
-        padding: 0 30px;
-        background: #fff0f1;
-        bottom: 76px;
-        position: absolute;
-        .submitAgain {
-          width: 88px;
-          height: 35px;
-          background: #53b4b3;
-          border-radius: 4px;
-          font-size: 16px;
-          font-family: PingFangSC-Medium, PingFang SC;
-          font-weight: 500;
-          color: rgba(255, 255, 255, 1);
-          text-align: center;
-          line-height: 35px;
-        }
-      }
-      .footLeft {
-        width: 55.38%;
-        height: 100%;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px -1px 10px 0px rgba(0, 0, 0, 0.05);
+  position: absolute;
+  left: 50%;
+  margin-left: -650px;
+  bottom: 0;
+  height: 76px;
+  width: 1300px;
+  .rejectReason {
+    width: 55.38%;
+    height: 80px;
+    padding: 0 30px;
+    background: #fff0f1;
+    bottom: 76px;
+    position: absolute;
+    .submitAgain {
+      width: 88px;
+      height: 35px;
+      background: #53b4b3;
+      border-radius: 4px;
+      font-size: 16px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 1);
+      text-align: center;
+      line-height: 35px;
+    }
+  }
+  .footLeft {
+    width: 55.38%;
+    height: 100%;
 
-        overflow: hidden;
-        .sureBtn {
-          width: 110px;
-          font-size: 16px;
-          margin-left: 0;
-        }
-        .checkFiles {
-          font-size: 16px;
-          font-family: PingFangSC-Medium, PingFang SC;
-          font-weight: 500;
-          color: #53b4b3;
-          margin-left: 40px;
-          cursor: pointer;
-        }
-        .submiter {
-          min-width: 62px;
-          margin-left: 7px;
-          .avatar2 {
-            margin-left: 8px;
-          }
-          .submitTime {
-            font-size: 10px;
-            font-family: PingFangSC-Regular, PingFang SC;
-            font-weight: 400;
-            color: rgba(102, 102, 102, 1);
-            margin-top: 5px;
-          }
-        }
-        .checkArea_wrap {
-          width: 240px;
-          height: 58px;
-          overflow: hidden;
-          margin-left: 12px;
-          margin-right: 12px;
-          .checkArea {
-            width: 240px; // margin-left:12px;
-            // margin-right:12px;
-            overflow: hidden;
-            height: 58px;
-            .checkItem {
-              width: 45px;
-              margin-right: 20px;
-              position: relative;
-              height: 58px;
-              &:nth-last-child(1) {
-                margin-right: 0px;
-              }
-              img {
-                width: 45px;
-                height: 45px;
-              }
-            }
-          }
-        }
+    overflow: hidden;
+    .sureBtn {
+      width: 110px;
+      font-size: 16px;
+      margin-left: 0;
+    }
+    .checkFiles {
+      font-size: 16px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #53b4b3;
+      margin-left: 40px;
+      cursor: pointer;
+    }
+    .submiter {
+      min-width: 62px;
+      margin-left: 7px;
+      .avatar2 {
+        margin-left: 8px;
       }
-      .footRight {
-        height: 100%;
-        width: 44.62%;
-        border-left: 1px solid #eee;
-        padding: 0 30px;
+      .submitTime {
+        font-size: 10px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: rgba(102, 102, 102, 1);
+        margin-top: 5px;
       }
     }
+    .checkArea_wrap {
+      width: 240px;
+      height: 58px;
+      overflow: hidden;
+      margin-left: 12px;
+      margin-right: 12px;
+      .checkArea {
+        width: 240px; // margin-left:12px;
+        // margin-right:12px;
+        overflow: hidden;
+        height: 58px;
+        .checkItem {
+          width: 45px;
+          margin-right: 20px;
+          position: relative;
+          height: 58px;
+          &:nth-last-child(1) {
+            margin-right: 0px;
+          }
+          img {
+            width: 45px;
+            height: 45px;
+          }
+        }
+      }
+    }
+  }
+  .footRight {
+    height: 100%;
+    width: 44.62%;
+    border-left: 1px solid #eee;
+    padding: 0 30px;
+  }
+}
 //     @media (min-width: 1800px) {
 //   .main {
 //     height: calc(100% - 110px) !important;
@@ -988,26 +985,26 @@ text-align: center;
 @media (max-width: 1300px) {
   .mainFoot {
     width: 1000px !important;
-    margin-left:-500px !important;
+    margin-left: -500px !important;
   }
-  .container_wrap{
+  .container_wrap {
     width: 1000px;
     min-width: 795px;
   }
 }
 @media (max-width: 1000px) {
   .mainFoot {
-    margin-left:0px !important;
-    left:0 !important;
+    margin-left: 0px !important;
+    left: 0 !important;
   }
 }
-.footRight2{
-  width:100%;
+.footRight2 {
+  width: 100%;
   height: 76px;
   position: absolute;
-  bottom:0;
-  left:0;
-  background:#fff;
+  bottom: 0;
+  left: 0;
+  background: #fff;
   box-shadow: 0px -1px 10px 0px rgba(0, 0, 0, 0.05);
   padding: 0 30px;
 }
@@ -1017,8 +1014,8 @@ text-align: center;
   <div class="container">
     <div class="container_wrap">
       <div class="header flex align-center justify-between">
-        <img v-if="detail.archivingFlag==1" class="archiveImg" src="../../assets/images/pigeonhole.png" alt>
-        <img v-if="detail.archivingFlag==0&&detail.completionFlag==1" class="archiveImg" src="../../assets/images/complete.png" alt>
+        <img v-if="detail.archivingFlag==1" class="archiveImg" src="../../assets/images/pigeonhole.png" alt />
+        <img v-if="detail.archivingFlag==0&&detail.completionFlag==1" class="archiveImg" src="../../assets/images/complete.png" alt />
         <div class="flex align-center">
           <div v-if="detail.archivingFlag==1">
             <div v-if="degree === 1" class="degree degree1">Low</div>
@@ -1047,36 +1044,36 @@ text-align: center;
         </div>
         <!-- <div v-if="detail.archivingFlag==1" class="flex">
           <div v-if="publicValue === 1" class="flex align-center">
-            <img src="../../assets/images/lock4.png" alt>
+            <img src="../../assets/images/lock4.svg" alt>
             <div class="ml10 Font666">所有人可见</div>
           </div>
           <div v-if="publicValue === 0" class="flex align-center">
-            <img src="../../assets/images/lock3.png" alt>
+            <img src="../../assets/images/lock3.svg" alt>
             <div class="ml10 Font666">项目参与人可见</div>
           </div>
-        </div> -->
+        </div>-->
         <div class="flex align-center">
           <div v-if="detail.archivingFlag==0&&detail.completionFlag==0">
             <div v-if="publicValue === 1" class="flex align-center pointer bghover" style="border-radius:4px;padding:5px;" @click="selectPublic(1)">
-              <img src="../../assets/images/lock4.png" alt>
+              <img src="../../assets/images/lock4.svg" alt />
               <div class="ml10 Font666">所有人可见</div>
             </div>
             <div v-if="publicValue === 0" class="flex align-center pointer bghover" @click="selectPublic(0)">
-              <img src="../../assets/images/lock3.png" alt>
+              <img src="../../assets/images/lock3.svg" alt />
               <div class="ml10 Font666">项目参与人可见</div>
             </div>
           </div>
           <div v-if="detail.archivingFlag==0" class="more_icon ml35">
             <el-dropdown placement="bottom-start" trigger="click">
               <div>
-                <img class="more-nohover" src="../../assets/images/more.png" alt>
-                <img class="more-hover" src="../../assets/images/more2.png" alt>
+                <img class="more-nohover" src="../../assets/images/more.svg" alt />
+                <img class="more-hover" src="../../assets/images/more2.svg" alt />
               </div>
               <el-dropdown-menu slot="dropdown" class="dropdown2">
-                <div @click="selectPublic(2)">
+                <div @click="delDialog = true">
                   <el-dropdown-item>
                     <div class="flex align-center">
-                      <img src="../../assets/images/record.png" alt>
+                      <img src="../../assets/images/record.png" alt />
                       <div>归档项目</div>
                     </div>
                   </el-dropdown-item>
@@ -1088,157 +1085,73 @@ text-align: center;
       </div>
       <div class="main flex" :style="{height:detail.completionFlag==1||detail.archivingFlag === 1?'calc(100% - 109px)':'calc(100% - 185px)'}">
         <div class="mainLeft">
-          <vue-scroll>
+          <vue-scroll :ops="ops">
             <div class="pd30" style="padding-top:10px;">
-
               <div class="period flex align-center" :style="{marginTop:detail.archivingFlag==1?'10px':''}">
-                <img src="../../assets/images/period.png" alt>
+                <img src="../../assets/images/period.svg" alt />
                 <div class="Font666 ml10" style="margin-right:55px;">项目周期</div>
-                <el-date-picker
-                  v-if="detail.archivingFlag==0"
-                  v-model="startTime"
-                  type="date"
-                  value-format="yyyy.MM.dd"
-                  placeholder="开始日期"
-                  :picker-options="pickerOptions0"
-                  @change="handleChange"
-                />
+                <el-date-picker v-if="detail.archivingFlag==0" v-model="startTime" type="date" value-format="yyyy.MM.dd" placeholder="开始日期" :picker-options="pickerOptions0" @change="handleChange" />
 
-                <div
-                  v-if="detail.archivingFlag==1"
-                  :class="detail.startDateStr==''?'Font999 ml30':'Font333 ml30'"
-                  style="margin-right:55px"
-                >{{ detail.startDateStr==''?'开始日期':detail.startDateStr }}</div>
+                <div v-if="detail.archivingFlag==1" :class="detail.startDateStr==''?'Font999 ml30':'Font333 ml30'" style="margin-right:55px">{{ detail.startDateStr==''?'开始日期':detail.startDateStr }}</div>
                 <div class="Font333">至</div>
-                <el-date-picker
-                  v-if="detail.archivingFlag==0"
-                  v-model="endTime"
-                  type="date"
-                  value-format="yyyy.MM.dd"
-                  placeholder="结束日期"
-                  :picker-options="pickerOptions1"
-                  @change="handleChange2"
-                />
+                <el-date-picker v-if="detail.archivingFlag==0" v-model="endTime" type="date" value-format="yyyy.MM.dd" placeholder="结束日期" :picker-options="pickerOptions1" @change="handleChange2" />
 
-                <div
-                  v-if="detail.archivingFlag==1"
-                  :class="detail.startDateStr==''?'Font999':'Font333'"
-                  style="margin-left:65px;"
-                >{{ detail.endDateStr==''?'结束日期':detail.endDateStr }}</div>
+                <div v-if="detail.archivingFlag==1" :class="detail.startDateStr==''?'Font999':'Font333'" style="margin-left:65px;">{{ detail.endDateStr==''?'结束日期':detail.endDateStr }}</div>
               </div>
               <div class="nowLink flex align-center">
-                <img src="../../assets/images/nowLink.png" alt>
+                <img src="../../assets/images/nowlink.svg" alt />
                 <div class="Font666 nowLink_txt">当前环节</div>
                 <div class="Font333 nowLink_value">{{ detail.currStepName }}</div>
                 <div class="tag">{{ detail.completionFlag==0?'进行中':'已结束' }}</div>
               </div>
               <div class="childTask flex align-center">
-                <img src="../../assets/images/childTask.png" alt>
+                <img src="../../assets/images/childTask.svg" alt />
                 <div class="Font666 ml10" style="margin-right:55px;">子任务（{{ childTaskNum }}）</div>
               </div>
               <div ref="childTask2" class="childTask2">
-                <div
-                  v-for="(item, index) in childTaskList"
-                  :key="index"
-                  class="taskItem flex justify-between"
-                >
-                  <div class="taskItem1 Font333">
-                    {{ item.name }}
-                  </div>
+                <div v-for="(item, index) in childTaskList" :key="index" class="taskItem flex justify-between">
+                  <div class="taskItem1 Font333">{{ item.name }}</div>
                   <div v-if="detail.archivingFlag==1" class="taskItem2 flex align-center">
-                    <img
-                      v-if="item.executorId === 'null'"
-                      class="default_avatar"
-                      src="../../assets/images/default.png"
-                      alt
-                    >
+                    <img v-if="item.executorId === 'null'" class="default_avatar" src="../../assets/images/default.png" alt />
                     <div v-else class="taskHead">{{ item.nickname }}</div>
                   </div>
                   <div v-if="detail.archivingFlag==0" class="taskItem2 flex align-center" style="width:64px;">
                     <el-popover v-model="item.visible" placement="right" trigger="click">
                       <div class="fromJoiner">
-                        <el-input
-                          v-model="keyword"
-                          placeholder="搜索成员"
-                          suffix-icon="el-icon-search"
-                          @keyup.native.enter="searchPerson"
-                        />
+                        <el-input v-model="keyword" placeholder="搜索成员" suffix-icon="el-icon-search" @keyup.native.enter="searchPerson" />
                         <div class="selectWrap mt10">
-                          <div
-                            v-for="(sub, subIndex) in joiner"
-                            :key="subIndex"
-                            class="holdPerson flex align-center justify-between"
-                            :style="{
-                              background: executorId === sub.id ? '#F6F7FF' : ''
-                            }"
-                            @click="selectJoiner(index, sub.id, item.id)"
-                          >
-
+                          <div v-for="(sub, subIndex) in joiner" :key="subIndex" class="holdPerson flex align-center justify-between" :style="{background: executorId === sub.id ? '#F6F7FF' : '' }" @click="selectJoiner(index, sub.id, item.id)">
                             <div class="flex align-center">
-                              <img
-                                v-if="subIndex==0"
-                                style="width:25px;height:25px;"
-                                src="../../assets/images/default.png"
-                                alt
-                              >
+                              <img v-if="subIndex==0" style="width:25px;height:25px;" src="../../assets/images/default.png" alt />
                               <div v-else class="avatar">{{ sub.nickname }}</div>
                               <div class="Font666 ml10">{{ sub.name }}</div>
                             </div>
-                            <img
-                              v-if="executorId === sub.id"
-                              src="../../assets/images/right.png"
-                              alt
-                            >
+                            <img v-if="executorId === sub.id" src="../../assets/images/right.png" alt />
                           </div>
                         </div>
-                        <div
-                          class="mt15 flex align-center justify-center"
-                          @click="getFromDepart(index)"
-                        >
+                        <div class="mt15 flex align-center justify-center" @click="getFromDepart(index)">
                           <i class="el-icon-plus font10" style="font-weight:600;color:#53B4B3" />
                           <div style="color:#53B4B3;margin-left:5px;cursor:pointer">从部门中获取</div>
                         </div>
                       </div>
                       <div slot="reference">
-                        <img
-                          v-if="item.executorId === 'null'"
-
-                          class="default_avatar"
-                          src="../../assets/images/default.png"
-                          alt
-                        >
-                        <div v-else class="taskHead">
-                          {{ item.nickname }}
-                        </div>
+                        <img v-if="item.executorId === 'null'" class="default_avatar" src="../../assets/images/default.png" alt />
+                        <div v-else class="taskHead">{{ item.nickname }}</div>
                       </div>
                     </el-popover>
-                    <img
-                      class="noShow"
-                      src="../../assets/images/delete3.png"
-                      alt
-                      @click="delTask(item.id)"
-                    >
+                    <img class="noShow" src="../../assets/images/delete3.svg" alt @click="delTask(item.id)" />
                   </div>
                 </div>
-                <div
-                  v-if="preAddTask&&detail.archivingFlag === 0"
-                  class="childTask_input flex justify-between align-center"
-                  :style="{marginTop:childTaskList.length>0?'7px':'0'}"
-                >
+                <div v-if="preAddTask&&detail.archivingFlag === 0" class="childTask_input flex justify-between align-center" :style="{marginTop:childTaskList.length>0?'7px':'0'}">
                   <div class="input_wrap">
-                    <input v-model="childTaskName" type="text" placeholder="请输入子任务名称">
+                    <input v-model="childTaskName" type="text" placeholder="请输入子任务名称" />
                   </div>
                   <div class="taskItem2 flex align-center">
-                    <img class="default_avatar" src="../../assets/images/default.png" alt>
-                    <img class="noShow" style="opacity:0;" src="../../assets/images/delete3.png" alt>
+                    <img class="default_avatar" src="../../assets/images/default.png" alt />
+                    <img class="noShow" style="opacity:0;" src="../../assets/images/delete3.svg" alt />
                   </div>
                 </div>
-                <div
-                  v-if="!preAddTask&&detail.archivingFlag === 0"
-                  class="addChildTask flex align-center"
-                  :style="{marginTop:childTaskList.length>0?'14px':'0'}"
-                  @click="addTask"
-                >
+                <div v-if="!preAddTask&&detail.archivingFlag === 0" class="addChildTask flex align-center" :style="{marginTop:childTaskList.length>0?'14px':'0'}" @click="addTask">
                   <i class="el-icon-plus font10" style="font-weight:600;color:#53B4B3" />
                   <div>添加子任务</div>
                 </div>
@@ -1250,42 +1163,23 @@ text-align: center;
                 </div>
               </div>
               <div class="mt25 flex align-center">
-                <img src="../../assets/images/related.png" alt>
+                <img src="../../assets/images/related.svg" alt />
                 <div class="Font666 ml10" style="margin-right:55px;">关联资料（{{ materialsNum }}）</div>
               </div>
               <div class="relatedData">
-                <el-upload
-                  v-if="detail.archivingFlag === 0"
-                  ref="upload"
-                  class="upload-demo"
-                  action="https://upload.qiniup.com"
-                  :data="qiniuData"
-                  :file-list="fileList"
-                  list-type="text"
-                  :on-success="handleSuccess"
-                  :before-upload="beforeUpload"
-                  :show-file-list="showfilelist"
-                  multiple
-                >
+                <el-upload v-if="detail.archivingFlag === 0" ref="upload" class="upload-demo" action="https://upload.qiniup.com" :data="qiniuData" :file-list="fileList" list-type="text" :on-success="handleSuccess" :before-upload="beforeUpload" :show-file-list="showfilelist" multiple>
                   <div class="addData flex align-center">
                     <i class="el-icon-plus font10" style="font-weight:600;color:#53B4B3" />
                     <div @click="showfilelist = true">添加资料</div>
                   </div>
                 </el-upload>
-                <div
-                  v-for="(item, index) in detail.materials"
-                  :key="index"
-                  class="dataList flex align-center justify-between"
-                >
+
+                <div v-for="(item, index) in detail.materials" :key="index" class="dataList flex align-center justify-between">
                   <div class="dataList1 flex align-center justify-between">
-                    <div
-                      class="flex align-center"
-                      style="cursor:pointer"
-                      @click="
+                    <div class="flex align-center" style="cursor:pointer" @click="
                         openFile(item.fileExt, item.fileUrl, item.name, item.fileSize)
-                      "
-                    >
-                      <img :src="item.iconUrl" alt>
+                      ">
+                      <img :src="item.iconUrl" alt />
                       <!-- <img src="../../assets/images/files.png" alt> -->
                       <div class="fileInfo">
                         <div class="fileName Font333">{{ item.name }}</div>
@@ -1295,33 +1189,15 @@ text-align: center;
                     <div style="opacity:0" class="checked Font999">已审核</div>
                   </div>
                   <div class="dataList2 flex align-center">
-                    <img
-                      v-if="item.approvalMaterialFlag===1"
-                      class="img1 pointer"
-                      src="../../assets/images/check.png"
-                      alt
-                      @click="markMaterial2(item.id)"
-                    >
+                    <img v-if="item.approvalMaterialFlag===1" class="img1 pointer" src="../../assets/images/check.svg" alt @click="markMaterial2(item.id)" />
                     <el-tooltip content="将该资料放进审核资料中" placement="top">
-                      <img
-                        v-if="item.approvalMaterialFlag===0"
-                        class="img1 pointer"
-                        src="../../assets/images/check2.png"
-                        alt
-                        @click="markMaterial(item.id)"
-                      >
+                      <img v-if="item.approvalMaterialFlag===0" class="img1 pointer" src="../../assets/images/check2.svg" alt @click="markMaterial(item.id)" />
                     </el-tooltip>
                     <div class="img2_wrap">
-                      <img
-                        class="img2"
-                        src="../../assets/images/delete3.png"
-                        alt
-                        @click="delData(item.id)"
-                      >
+                      <img class="img2" src="../../assets/images/delete3.svg" alt @click="delData(item.id)" />
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
           </vue-scroll>
@@ -1332,104 +1208,62 @@ text-align: center;
             <div v-for="(item, index) in joiner.slice(1,maxLength+1)" :key="index" class="avatar">
               <el-tooltip class="item" effect="dark" content="item.name" placement="top">
                 <div slot="content">{{ item.name }}</div>
-                <div class="avatar">
-
-                  {{ item.nickname }}
-
-                </div>
+                <div class="avatar">{{ item.nickname }}</div>
               </el-tooltip>
             </div>
-            <el-popover
-              v-if="detail.archivingFlag!==1&&detail.completionFlag!==1"
-              v-model="addPanel"
-              placement="bottom"
-              trigger="click"
-            >
+            <el-popover v-if="detail.archivingFlag!==1&&detail.completionFlag!==1" v-model="addPanel" placement="bottom" trigger="click">
               <div v-if="executorsBySteps.length>0" class="addPanel flex">
                 <div class="panelLeft">
-                  <div
-                    v-for="(item, index) in executorsBySteps"
-                    :key="item.id"
-                    v-waves
-                    :class="index === stepIndex ? 'panleftItem2' : 'panleftItem'"
-                    @click="selectStep(index)"
-                  >{{ item.name }}</div>
+                  <div v-for="(item, index) in executorsBySteps" :key="item.id" v-waves :class="index === stepIndex ? 'panleftItem2' : 'panleftItem'" @click="selectStep(index)">{{ item.name }}</div>
                 </div>
                 <div class="panelRight pb15">
                   <div class="Font999 mt25 ml25">{{ executorsBySteps[stepIndex].name }}成员</div>
-                  <div
-                    class="flex align-center mt15 ml25"
-                    style="margin-bottom:7px;"
-                    @click="addMember"
-                  >
-                    <img class="pointer transBig" src="../../assets/images/icon_add.png" alt>
+                  <div class="flex align-center mt15 ml25" style="margin-bottom:7px;" @click="addMember">
+                    <img class="pointer transBig" src="../../assets/images/icon_add.png" alt />
                     <div class="FontP pointer ml10">添加成员</div>
                   </div>
-                  <div
-                    v-for="item in executorsBySteps[stepIndex].executors"
-                    :key="item.id"
-                    class="executorItem pl25 pr20 flex align-center justify-between"
-                  >
+                  <div v-for="item in executorsBySteps[stepIndex].executors" :key="item.id" class="executorItem pl25 pr20 flex align-center justify-between">
                     <div class="flex align-center">
                       <div class="avatar">{{ item.nickname }}</div>
                       <div class="ml10 Font666">{{ item.name }}</div>
                       <div v-if="!item.canDelete" class="defaultM">默认成员</div>
                     </div>
-                    <img
-                      v-if="item.canDelete"
-                      class="pointer"
-                      src="../../assets/images/delete3.png"
-                      alt
-                      @click="delExecutor(item.id)"
-                    >
+                    <img v-if="item.canDelete" class="pointer" src="../../assets/images/delete3.svg" alt @click="delExecutor(item.id)" />
                   </div>
                   <div class="Font999 ml25" style="margin-top:17px;">审批成员</div>
-                  <div
-                    v-for="(item, index) in executorsBySteps[stepIndex].approvers"
-                    :key="index"
-                    class="flex align-center mt15 ml25"
-                  >
+                  <div v-for="(item, index) in executorsBySteps[stepIndex].approvers" :key="index" class="flex align-center mt15 ml25">
                     <div class="avatar">{{ item.nickname }}</div>
                     <div class="ml10 Font666">{{ item.name }}</div>
                   </div>
                 </div>
               </div>
               <div slot="reference" @click="filterNowStep">
-                <img v-if="joiner.length<(maxLength+1)" class="transBig" src="../../assets/images/add2.png" alt>
-                <img v-else class="loadMore transBig" src="../../assets/images/add.png" alt>
+                <img v-if="joiner.length<(maxLength+1)" class="transBig" src="../../assets/images/add2.png" alt />
+                <img v-else class="loadMore transBig" src="../../assets/images/add.png" alt />
               </div>
-
             </el-popover>
             <!-- <img v-if="joiner.length>maxLength&&!showMore" class="loadMore transBig" src="../../assets/images/add.png" alt @click="loadMoreJoiner"> -->
           </div>
 
           <div id="gundong" ref="gundong" class="projectNews" :style="newsHeight">
-            <img v-if="showLoading" class="loading" src="../../assets/images/loading.gif" alt="">
-            <vue-scroll ref="vs" @handle-scroll="handleScroll">
-
+            <img v-if="showLoading" class="loading" src="../../assets/images/loading.gif" alt />
+            <vue-scroll :ops="ops" ref="vs" @handle-scroll="handleScroll">
               <div class="projectNews_wrap">
-
                 <div v-for="(item, index) in newsList.list" :key="index" class="news">
                   <div v-if="item.type === 1" class="mt25">
                     <div class="flex justify-between">
                       <div class="flex" style="width:calc(100% - 90px)">
-                        <img v-if="item.content.indexOf('修改了')>-1||item.content.indexOf('添加了项目参与人')>-1||item.content.indexOf('环节流转')>-1||item.content.indexOf('删除了项目参与人')>-1" src="../../assets/images/edit.png" alt="" style="width:18px;height:18px">
-                        <img v-if="item.content.indexOf('时间')>-1" src="../../assets/images/period.png" alt="" style="width:18px;height:18px">
-                        <img v-if="item.content.indexOf('子任务')>-1" src="../../assets/images/childTask.png" alt="" style="width:18px;height:18px">
-                        <img v-if="item.content.indexOf('添加了资料')>-1||item.content.indexOf('删除了资料')>-1" src="../../assets/images/related.png" alt="" style="width:18px;height:18px">
-                        <img v-if="item.content.indexOf('发起了项目')>-1||item.content.indexOf('项目进入')>-1||item.content.indexOf('项目完成')>-1||item.content.indexOf('归档了本项目')>-1" src="../../assets/images/nowLink.png" alt="" style="width:18px;height:18px">
+                        <img v-if="item.content.indexOf('修改了')>-1||item.content.indexOf('添加了项目参与人')>-1||item.content.indexOf('环节流转')>-1||item.content.indexOf('删除了项目参与人')>-1" src="../../assets/images/edit.svg" alt style="width:18px;height:18px" />
+                        <img v-if="item.content.indexOf('时间')>-1" src="../../assets/images/period.svg" alt style="width:18px;height:18px" />
+                        <img v-if="item.content.indexOf('子任务')>-1" src="../../assets/images/childTask.svg" alt style="width:18px;height:18px" />
+                        <img v-if="item.content.indexOf('添加了资料')>-1||item.content.indexOf('删除了资料')>-1" src="../../assets/images/related.svg" alt style="width:18px;height:18px" />
+                        <img v-if="item.content.indexOf('发起了项目')>-1||item.content.indexOf('项目进入')>-1||item.content.indexOf('项目完成')>-1||item.content.indexOf('归档了本项目')>-1" src="../../assets/images/nowlink.svg" alt style="width:18px;height:18px" />
                         <div class="Font333 ellipsis ml20" style="width:calc(100% - 38px)">{{ item.content }}</div>
                       </div>
                       <div class="Font666">{{ item.createTimeStr }}</div>
                     </div>
                     <div v-if="item.related.length > 0">
-                      <div
-                        v-for="(sub, subIndex) in item.related"
-                        :key="subIndex"
-                        class="FontP mt10 pointer"
-                        style="margin-left:38px;"
-                        @click="openFileFromData(sub.relatedId)"
-                      >{{ sub.relatedName }}</div>
+                      <div v-for="(sub, subIndex) in item.related" :key="subIndex" class="FontP mt10 pointer" style="margin-left:38px;" @click="openFileFromData(sub.relatedId)">{{ sub.relatedName }}</div>
                     </div>
                   </div>
                   <div v-if="item.type === 2" class="mt25">
@@ -1443,38 +1277,23 @@ text-align: center;
                     <div class="Font333 ml40 mt10">{{ item.content }}</div>
                   </div>
                 </div>
-
               </div>
             </vue-scroll>
           </div>
 
           <div v-if="detail.completionFlag==1&&detail.archivingFlag!==1" class="footRight2 flex justify-between align-center">
             <at v-model="inputcontent" :members="joiner2" @enterSend="send" @toFatherID="aiTeID">
-              <input type="text" placeholder="@提及他人，发送消息">
+              <input type="text" placeholder="@提及他人，发送消息" />
             </at>
-            <img v-if="inputcontent === ''" class="pointer" src="../../assets/images/send.png" alt>
-            <img
-              v-if="inputcontent !== ''"
-              class="pointer"
-              src="../../assets/images/send2.png"
-              alt
-              @click="send"
-            >
+            <img v-if="inputcontent === ''" class="pointer" src="../../assets/images/send.svg" alt />
+            <img v-if="inputcontent !== ''" class="pointer" src="../../assets/images/send2.svg" alt @click="send" />
           </div>
-
         </div>
-
       </div>
       <div v-if="selectForm1 || selectForm2 ||showRejectFrom||ShowSubmitAgain" class="mask" />
       <div v-if="showRejectFrom" class="RejectFrom">
         <div class="title">驳回理由</div>
-        <el-input
-          v-model="reason"
-          type="textarea"
-          class="textarea mt20"
-          rows="7"
-          placeholder="请输入驳回理由"
-        />
+        <el-input v-model="reason" type="textarea" class="textarea mt20" rows="7" placeholder="请输入驳回理由" />
         <div class="flex justify-center mt40">
           <div class="cancelBtn" @click="cancelReject">取消</div>
           <div class="sureBtn" @click="sureReject">确认</div>
@@ -1486,18 +1305,7 @@ text-align: center;
           <div class="selectForm1_left">
             <div class="selectForm1_title">添加成员</div>
             <el-input v-model="filterText" placeholder="搜索成员" />
-            <el-tree
-              ref="tree"
-              class="filter-tree"
-              :data="memberStructures"
-              :props="defaultProps"
-              accordion
-              show-checkbox
-              highlight-current
-              :filter-node-method="filterNode"
-              style="border:1px solid #EBEEF5;padding:5px;height:290px;margin-top:8px;overflow-y:auto"
-              @check-change="treeCheck"
-            />
+            <el-tree ref="tree" class="filter-tree" :data="memberStructures" :props="defaultProps" accordion show-checkbox highlight-current :filter-node-method="filterNode" style="border:1px solid #EBEEF5;padding:5px;height:290px;margin-top:8px;overflow-y:auto" @check-change="treeCheck" />
           </div>
           <div class="selectForm1_left">
             <div class="selectForm1_title">已选成员</div>
@@ -1530,7 +1338,7 @@ text-align: center;
       <div v-if="ShowSubmitAgain" class="submitAgainForm">
         <div class="content">
           确认是否依照驳回理由已完善审核条
-          <br>件，申请进行再次审核
+          <br />件，申请进行再次审核
         </div>
         <div class="flex justify-center">
           <div class="cancelBtn" @click="ShowSubmitAgain = false">取 消</div>
@@ -1540,23 +1348,16 @@ text-align: center;
     </div>
     <!-- 存在底部bar -->
     <div v-if="detail.archivingFlag === 0&&detail.completionFlag!==1" class="mainFoot flex align-center" :style="{flexDirection: detail.completionFlag==1?'row-reverse':'row'}">
-      <div
-        v-if="checkInfo.currStepStatus===3&&checkInfo.canOp"
-        class="rejectReason flex align-center justify-between"
-      >
+      <div v-if="checkInfo.currStepStatus===3&&checkInfo.canOp" class="rejectReason flex align-center justify-between">
         <div class="flex align-center">
-          <img src="../../assets/images/notice.png" alt>
+          <img src="../../assets/images/notice.png" alt />
           <div class="Font666 ml10">{{ checkInfo.rejectReason==''?'审核被驳回':checkInfo.rejectReason }}</div>
         </div>
         <div class="submitAgain pointer" @click="submitAgain">重新申请</div>
       </div>
       <div class="footLeft flex align-center">
         <!-- 未提交审核 -->
-        <div
-          v-if="checkInfo.currStepStatus === 1"
-          class="flex align-center justify-center"
-          style="width:100%;height:100%;"
-        >
+        <div v-if="checkInfo.currStepStatus === 1" class="flex align-center justify-center" style="width:100%;height:100%;">
           <div class="sureBtn" @click="startGo">流转</div>
 
           <el-popover placement="top-start" trigger="click">
@@ -1564,41 +1365,21 @@ text-align: center;
               <vue-scroll>
                 <div class="flex align-center filesArea_head">
                   <div class="Font333 font16">审核资料（{{ currMaterials_arr.length }}）</div>
-                  <el-upload
-                    v-if="checkInfo.canOp"
-                    ref="upload"
-                    class="upload-demo"
-                    action="https://upload.qiniup.com"
-                    :data="qiniuData"
-                    :file-list="fileList2"
-                    :on-success="handleSuccess2"
-                    :before-upload="beforeUpload"
-                    multiple
-                  >
+                  <el-upload v-if="checkInfo.canOp" ref="upload" class="upload-demo" action="https://upload.qiniup.com" :data="qiniuData" :file-list="fileList2" :on-success="handleSuccess2" :before-upload="beforeUpload" multiple>
                     <div class="upload">本地上传</div>
                   </el-upload>
                 </div>
-                <div
-                  v-for="(item, index) in currMaterials_arr"
-                  :key="index"
-                  class="dataList flex align-center justify-between"
-                >
+                <div v-for="(item, index) in currMaterials_arr" :key="index" class="dataList flex align-center justify-between">
                   <div class="dataList1 ml10 mt10" style="width:100%">
-                    <div
-                      class="flex align-center justify-between pr20"
-                      style="cursor:pointer"
-                      @click="
+                    <div class="flex align-center justify-between pr20" style="cursor:pointer" @click="
                         openFile(item.fileExt, item.fileUrl, item.name, item.fileSize)
-                      "
-                    >
+                      ">
                       <div class="flex align-center">
                         <!-- <img :src="item.iconUrl" alt> -->
-                        <img src="../../assets/images/files.png" alt>
+                        <img src="../../assets/images/files.png" alt />
                         <div class="fileInfo">
                           <div class="fileName2 Font333">{{ item.name }}</div>
-                          <div
-                            class="fileTime"
-                          >{{ item.fileSizeStr }} {{ item.creatorName }} {{ item.createTimeStr }}</div>
+                          <div class="fileTime">{{ item.fileSizeStr }} {{ item.creatorName }} {{ item.createTimeStr }}</div>
                         </div>
                       </div>
                       <div class="bghover2 Font666" @click.stop="delData2(item.id)">移除</div>
@@ -1618,29 +1399,13 @@ text-align: center;
             <div class="submitTime">{{ checkInfo.submitTimeStr }}</div>
           </div>
           <div class="Font666 font18 ml30" style="margin-left:40px;">审核</div>
-          <div
-            v-if="checkInfo.approvalNodes.length > 4"
-            class="ml15"
-            style="width:18px;height:26px;"
-          >
-            <img
-              v-if="!hideLeft"
-              class="pointer"
-              src="../../assets/images/left1.png"
-              alt
-              @click="pullLeft"
-            >
+          <div v-if="checkInfo.approvalNodes.length > 4" class="ml15" style="width:18px;height:26px;">
+            <img v-if="!hideLeft" class="pointer" src="../../assets/images/left1.svg" alt @click="pullLeft" />
           </div>
           <div class="checkArea_wrap">
             <div ref="checkArea" class="checkArea flex align-center">
-              <div
-                v-for="(item, index) in approvalNodes"
-                :key="index"
-                class="checkItem"
-              >
-                <div
-                  class="avatar2"
-                >{{ item.approvers[0].name }}</div>
+              <div v-for="(item, index) in checkInfo.approvalNodes" :key="index" class="checkItem">
+                <div class="avatar2">{{ item.approvers[0].name }}</div>
                 <div v-if="item.status === 2" class="status2">待审</div>
                 <div v-if="item.status === 3" class="status3">通过</div>
                 <div v-if="item.status === 4" class="status4">驳回</div>
@@ -1648,13 +1413,7 @@ text-align: center;
             </div>
           </div>
           <div v-if="checkInfo.approvalNodes.length > 4" style="width:18px;height:26px;">
-            <img
-              v-if="!hideRight"
-              class="pointer"
-              src="../../assets/images/right1.png"
-              alt
-              @click="pullRight"
-            >
+            <img v-if="!hideRight" class="pointer" src="../../assets/images/right1.svg" alt @click="pullRight" />
           </div>
           <!-- 判断是否有审核权限 -->
           <el-popover v-model="showFileArea2" placement="top-start" trigger="click">
@@ -1666,25 +1425,15 @@ text-align: center;
                   <div v-if="checkInfo.canOp" class="reject pointer ml20" @click="showRejectFrom = true">驳回</div>
                   <i class="el-icon-close font16 ml30 pointer" style="color:#999" @click="showFileArea2 = false" />
                 </div>
-                <div
-                  v-for="(item, index) in currMaterials_arr"
-                  :key="index"
-                  class="dataList flex align-center justify-between"
-                >
+                <div v-for="(item, index) in currMaterials_arr" :key="index" class="dataList flex align-center justify-between">
                   <div class="dataList1 ml10 mt10" style="width:100%">
-                    <div
-                      class="flex align-center"
-                      style="cursor:pointer"
-                      @click="
+                    <div class="flex align-center" style="cursor:pointer" @click="
                         openFile(item.fileExt, item.fileUrl, item.name, item.fileSize)
-                      "
-                    >
-                      <img src="../../assets/images/files.png" alt>
+                      ">
+                      <img src="../../assets/images/files.png" alt />
                       <div class="fileInfo">
                         <div class="fileName2 Font333">{{ item.name }}</div>
-                        <div
-                          class="fileTime"
-                        >{{ item.fileSizeStr }} {{ item.creatorName }} {{ item.createTimeStr }}</div>
+                        <div class="fileTime">{{ item.fileSizeStr }} {{ item.creatorName }} {{ item.createTimeStr }}</div>
                       </div>
                     </div>
                   </div>
@@ -1697,7 +1446,6 @@ text-align: center;
             </div>
           </el-popover>
           <!-- 判断是否有审核权限 -->
-
         </div>
         <!-- 审核驳回 -->
         <div v-if="checkInfo.currStepStatus === 3" class="flex align-center justify-between">
@@ -1707,30 +1455,13 @@ text-align: center;
             <div class="submitTime">{{ checkInfo.submitTimeStr }}</div>
           </div>
           <div class="Font666 font18 ml30" style="margin-left:40px;">审核</div>
-          <div
-            v-if="checkInfo.approvalNodes.length > 4"
-            class="ml15"
-            style="width:18px;height:26px;"
-          >
-            <img
-              v-if="!hideLeft"
-              class="pointer"
-              src="../../assets/images/left1.png"
-              alt
-              @click="pullLeft"
-            >
+          <div v-if="checkInfo.approvalNodes.length > 4" class="ml15" style="width:18px;height:26px;">
+            <img v-if="!hideLeft" class="pointer" src="../../assets/images/left1.svg" alt @click="pullLeft" />
           </div>
           <div class="checkArea_wrap">
             <div ref="checkArea" class="checkArea flex align-center">
-              <div
-                v-for="(item, index) in approvalNodes"
-
-                :key="index"
-                class="checkItem"
-              >
-                <div
-                  class="avatar2"
-                >{{ item.approvers[0].name }}</div>
+              <div v-for="(item, index) in checkInfo.approvalNodes" :key="index" class="checkItem">
+                <div class="avatar2">{{ item.approvers[0].name }}</div>
                 <div v-if="item.status === 2" class="status2">待审</div>
                 <div v-if="item.status === 3" class="status3">通过</div>
                 <div v-if="item.status === 4" class="status4">驳回</div>
@@ -1738,13 +1469,7 @@ text-align: center;
             </div>
           </div>
           <div v-if="checkInfo.approvalNodes.length > 4" style="width:18px;height:26px;">
-            <img
-              v-if="!hideRight"
-              class="pointer"
-              src="../../assets/images/right1.png"
-              alt
-              @click="pullRight"
-            >
+            <img v-if="!hideRight" class="pointer" src="../../assets/images/right1.svg" alt @click="pullRight" />
           </div>
 
           <el-popover v-model="showFileArea3" placement="top-start" trigger="click">
@@ -1752,46 +1477,22 @@ text-align: center;
               <vue-scroll>
                 <div class="flex align-center filesArea_head">
                   <div class="Font333 font16">审核资料（{{ currMaterials_arr.length }}）</div>
-                  <el-upload
-                    v-if="checkInfo.canOp"
-                    ref="upload"
-                    class="upload-demo"
-                    action="https://upload.qiniup.com"
-                    :data="qiniuData"
-                    :file-list="fileList2"
-                    :on-success="handleSuccess2"
-                    :before-upload="beforeUpload"
-                    multiple
-                  >
+                  <el-upload v-if="checkInfo.canOp" ref="upload" class="upload-demo" action="https://upload.qiniup.com" :data="qiniuData" :file-list="fileList2" :on-success="handleSuccess2" :before-upload="beforeUpload" multiple>
                     <div class="upload bghover2">本地上传</div>
                   </el-upload>
 
-                  <i
-                    class="el-icon-close font16 pointer"
-                    style="color:#999"
-                    @click="showFileArea3 = false"
-                  />
+                  <i class="el-icon-close font16 pointer" style="color:#999" @click="showFileArea3 = false" />
                 </div>
-                <div
-                  v-for="(item, index) in currMaterials_arr"
-                  :key="index"
-                  class="dataList flex align-center justify-between"
-                >
+                <div v-for="(item, index) in currMaterials_arr" :key="index" class="dataList flex align-center justify-between">
                   <div class="dataList1 ml10 mt10" style="width:100%">
-                    <div
-                      class="flex align-center justify-between pr20"
-                      style="cursor:pointer"
-                      @click="
+                    <div class="flex align-center justify-between pr20" style="cursor:pointer" @click="
                         openFile(item.fileExt, item.fileUrl, item.name, item.fileSize)
-                      "
-                    >
+                      ">
                       <div class="flex align-center">
-                        <img src="../../assets/images/files.png" alt>
+                        <img src="../../assets/images/files.png" alt />
                         <div class="fileInfo">
                           <div class="fileName2 Font333">{{ item.name }}</div>
-                          <div
-                            class="fileTime"
-                          >{{ item.fileSizeStr }} {{ item.creatorName }} {{ item.createTimeStr }}</div>
+                          <div class="fileTime">{{ item.fileSizeStr }} {{ item.creatorName }} {{ item.createTimeStr }}</div>
                         </div>
                       </div>
                       <div class="bghover2 Font666" @click.stop="delData2(item.id)">移除</div>
@@ -1806,16 +1507,10 @@ text-align: center;
       </div>
       <div class="footRight flex justify-between align-center">
         <at v-model="inputcontent" :members="joiner2" @enterSend="send" @toFatherID="aiTeID">
-          <input type="text" placeholder="@提及他人，发送消息">
+          <input type="text" placeholder="@提及他人，发送消息" />
         </at>
-        <img v-if="inputcontent === ''" class="pointer" src="../../assets/images/send.png" alt>
-        <img
-          v-if="inputcontent !== ''"
-          class="pointer"
-          src="../../assets/images/send2.png"
-          alt
-          @click="send"
-        >
+        <img v-if="inputcontent === ''" class="pointer" src="../../assets/images/send.svg" alt />
+        <img v-if="inputcontent !== ''" class="pointer" src="../../assets/images/send2.svg" alt @click="send" />
       </div>
     </div>
 
@@ -1825,16 +1520,28 @@ text-align: center;
         <at v-model="inputcontent" :members="joiner2" @enterSend="send" @toFatherID="aiTeID">
           <input type="text" placeholder="@提及他人，发送消息">
         </at>
-        <img v-if="inputcontent === ''" class="pointer" src="../../assets/images/send.png" alt>
+        <img v-if="inputcontent === ''" class="pointer" src="../../assets/images/send.svg" alt>
         <img
           v-if="inputcontent !== ''"
           class="pointer"
-          src="../../assets/images/send2.png"
+          src="../../assets/images/send2.svg"
           alt
           @click="send"
         >
       </div>
-    </div> -->
+    </div>-->
+
+    <el-dialog title="提示" :visible.sync="delDialog" width="525px" :show-close="show_close" center class="text-center del-dialog" :append-to-body="true">
+      <div class="text-center">
+        <span>确认归档项目吗？</span>
+      </div>
+
+      <span slot="footer" class="dialog-footer flex justify-center">
+        <div class="cancelBtn" @click="delDialog = false">取消</div>
+        <div class="sureBtn" @click="selectPublic(2)">确认</div>
+      </span>
+    </el-dialog>
+
   </div>
 </template>
 
@@ -1879,8 +1586,19 @@ export default {
   directives: {
     waves
   },
-  data() {
+  data () {
     return {
+      ops: {
+
+        bar: {
+          background: 'rgba(120, 120, 120, 0.4)',
+          size: '6px',
+          onlyShowBarOnScroll: false,
+          keepShow: false
+        }
+      },
+      show_close: false,
+      delDialog: false,
       showRejectFrom: false,
       ShowSubmitAgain: false,
       reason: '',
@@ -1906,7 +1624,7 @@ export default {
       selectForm2: false,
       memberStructures: [],
       filterText: '',
-      showfilelist: true,
+      showfilelist: false,
       defaultProps: {
         children: 'children',
         label: 'label'
@@ -1921,6 +1639,7 @@ export default {
       },
       materialsParam: [],
       uniqueNum: 0,
+      uniqueNum2: 0,
       newsParam: {
         pageNo: 1,
         pageSize: 10,
@@ -1970,30 +1689,34 @@ export default {
   computed: {
   },
   watch: {
-    filterText(val) {
+    filterText (val) {
       this.$refs.tree.filter(val)
-    },
-    checkInfo: {
-      handler() {
-        if (this.detail !== '' && this.detail.completionFlag !== 1 && this.detail.archivingFlag !== 1) {
-          const xx = JSON.stringify(this.checkInfo.approvalNodes)
-          const approvalNodes = JSON.parse(xx)
-          for (let i = 0; i < approvalNodes.length; i++) {
-            if (approvalNodes[i].approvers.length > 1) {
-              for (let x = 0; x < approvalNodes[i].approvers.length; x++) {
-                if (approvalNodes[i].approvers[x].status === -1 || approvalNodes[i].approvers[x].status === 1) {
-                  approvalNodes[i].approvers = [approvalNodes[i].approvers[x]]
-                }
-              }
-            }
-          }
-          this.approvalNodes = approvalNodes
-        }
-      },
-      deep: true
     }
+    // checkInfo: {
+    //   handler () {
+    //     if (this.detail !== '' && this.detail.completionFlag !== 1 && this.detail.archivingFlag !== 1) {
+    //       const xx = JSON.stringify(this.checkInfo.approvalNodes)
+    //       const approvalNodes = JSON.parse(xx)
+    //       for (let i = 0; i < approvalNodes.length; i++) {
+    //         if (approvalNodes[i].approvers.length > 1) {
+    //           for (let x = 0; x < approvalNodes[i].approvers.length; x++) {
+    //             if (approvalNodes[i].approvers[x].status === -1 || approvalNodes[i].approvers[x].status === 1) {
+    //               approvalNodes[i].approvers = [approvalNodes[i].approvers[x]]
+    //             }
+    //           }
+    //         }
+    //       }
+    //       this.approvalNodes = approvalNodes
+    //     }
+    //   },
+    //   deep: true
+    // }
   },
-  created() {
+  created () {
+    // getStrategy2().then(res=>{
+    //            this.uptoken1 =  res.uploadToken
+    //            this.domain1 =  res.fsDomain
+    //         })
     this.productId = this.$route.query.id
     this.getDetail()
     this.getTaskList()
@@ -2001,6 +1724,17 @@ export default {
     this.getJoiner2()
     this.getStrategy()
     this.getNews()
+    setTimeout(() => {
+      this.$refs['vs'].scrollTo(
+        {
+          y: 1000000
+        },
+        500,
+        'easeInQuad'
+      )
+    }, 1000)
+
+    // this.getNews(scrollTo)
     this.getExecutors()
     this.getCheckInfo()
     this.getCurrMaterials()
@@ -2026,21 +1760,28 @@ export default {
     }
   },
   methods: {
-    filterNowStep() {
+    // 获取子组件传来的数据
+    getChid (e) {
+      if (!e) {
+        // 说明上传全部结束
+        this.getDetail()
+      }
+    },
+    filterNowStep () {
       for (let i = 0; i < this.executorsBySteps.length; i++) {
         if (this.detail.currStepId === this.executorsBySteps[i].id) {
           this.stepIndex = i
         }
       }
     },
-    handleScroll(vertical) {
+    handleScroll (vertical) {
       if (vertical.scrollTop === 0) {
         // 触顶加载更多
 
         this.loadMore()
       }
     },
-    loadMoreJoiner() {
+    loadMoreJoiner () {
       this.maxLength = 999
       this.showMore = true
       setTimeout(() => {
@@ -2050,7 +1791,7 @@ export default {
       }, 500)
     },
     // 确认再次申请
-    sureSubmit() {
+    sureSubmit () {
       submitCheck(this.productId, this.detail.currNodeId).then(() => {
         this.$notify({
           title: '成功',
@@ -2064,17 +1805,17 @@ export default {
       })
     },
     // 重新申请
-    submitAgain() {
+    submitAgain () {
       this.ShowSubmitAgain = true
     },
     // 取消驳回
-    cancelReject() {
+    cancelReject () {
       this.reason = ''
       this.showRejectFrom = false
       this.showFileArea2 = false
     },
     // 审核驳回
-    sureReject() {
+    sureReject () {
       this.showFileArea2 = false
       const param = {
         reason: this.reason
@@ -2095,7 +1836,7 @@ export default {
       )
     },
     // 删除审核资料
-    delData2(id) {
+    delData2 (id) {
       delApprData(this.productId, id).then(() => {
         this.$notify({
           title: '',
@@ -2106,7 +1847,7 @@ export default {
         this.getNews(scrollTo)
       })
     },
-    passCheck() {
+    passCheck () {
       this.showFileArea2 = false
       agreeCheck(this.productId, this.checkInfo.currNodeId).then(res => {
         this.$notify({
@@ -2121,7 +1862,7 @@ export default {
       })
     },
     // 标记为审核资料
-    markMaterial(id) {
+    markMaterial (id) {
       markMaterials(this.productId, id).then(() => {
         this.$notify({
           title: '成功',
@@ -2134,7 +1875,7 @@ export default {
       })
     },
     // 取消标记为审核资料
-    markMaterial2(id) {
+    markMaterial2 (id) {
       delApprData(this.productId, id).then(() => {
         this.$notify({
           message: '移除审核资料成功',
@@ -2147,12 +1888,12 @@ export default {
     },
 
     // 获取当前审核资料
-    getCurrMaterials() {
+    getCurrMaterials () {
       currMaterials(this.productId).then(res => {
         this.currMaterials_arr = res
       })
     },
-    pullLeft() {
+    pullLeft () {
       this.$refs.checkArea.scrollLeft -= 10
       this.hideRight = false
       if (this.$refs.checkArea.scrollLeft < 1) {
@@ -2161,7 +1902,7 @@ export default {
         this.hideLeft = false
       }
     },
-    pullRight() {
+    pullRight () {
       this.$refs.checkArea.scrollLeft += 10
       this.hideLeft = false
       if (
@@ -2174,7 +1915,7 @@ export default {
       }
     },
     // 开始流转
-    startGo() {
+    startGo () {
       submitCheck(this.productId, this.detail.currNodeId).then(() => {
         this.$notify({
           title: '成功',
@@ -2186,7 +1927,7 @@ export default {
       })
     },
     // 获取审核信息
-    getCheckInfo() {
+    getCheckInfo () {
       getCheckInfo(this.productId).then(res => {
         if (res.approvalNodes) {
           for (let i = 0; i < res.approvalNodes.length; i++) {
@@ -2206,12 +1947,12 @@ export default {
         this.checkInfo = res
       })
     },
-    addMember() {
+    addMember () {
       this.getStructures()
       this.selectForm2 = true
     },
     // 删除项目步骤执行人
-    delExecutor(id) {
+    delExecutor (id) {
       const stepId = this.executorsBySteps[this.stepIndex].id
       delExecutors(this.productId, stepId, id).then(() => {
         this.$notify({
@@ -2224,11 +1965,11 @@ export default {
       })
     },
     // 选择流程
-    selectStep(index) {
+    selectStep (index) {
       this.stepIndex = index
     },
     // 获取各流程环节下的参与人
-    getExecutors() {
+    getExecutors () {
       getbySteps(this.productId).then(res => {
         for (let i = 0; i < res.length; i++) {
           for (let x = 0; x < res[i].executors.length; x++) {
@@ -2252,19 +1993,19 @@ export default {
       })
     },
     // 打开添加环节参与人面板
-    showAddPanel() {
+    showAddPanel () {
       // this.getExecutors()
       this.addPanel = true
     },
     // 每次@记录id
-    aiTeID(id, name) {
+    aiTeID (id, name) {
       const obj = {
         id: id,
         name: name
       }
       this.atArr.push(obj)
     },
-    send(e) {
+    send (e) {
       for (let i = 0; i < this.atArr.length; i++) {
         const str = '@' + this.atArr[i].name
         if (this.inputcontent.indexOf(str) === -1) {
@@ -2306,7 +2047,7 @@ export default {
       )
     },
     // 加载更多动态
-    loadMore() {
+    loadMore () {
       if (this.newsList.more) {
         this.showLoading = true
         this.newsParam.pageSize += 10
@@ -2333,7 +2074,7 @@ export default {
       }
     },
     // 获取动态
-    getNews(scrollTo) {
+    getNews (scrollTo) {
       this.newsParam.pageSize = 10
       this.newsParam.localLatestTrendId = ''
       getNews(this.newsParam, this.productId).then(res => {
@@ -2349,6 +2090,7 @@ export default {
         this.newsList = res
       })
       if (scrollTo) {
+        console.log('zhixing')
         this.$refs['vs'].scrollTo(
           {
             y: 1000000
@@ -2358,7 +2100,7 @@ export default {
         )
       }
     },
-    openFile(fileExt, fileUrl, name, fileSize) {
+    openFile (fileExt, fileUrl, name, fileSize) {
       if (fileSize === 0) {
         this.$notify({
           title: '提示',
@@ -2415,13 +2157,23 @@ export default {
         window.open(fileUrl)
       }
     },
-    openFileFromData(id) {
+    openFileFromData (id) {
       var temObj = {}
       for (let i = 0; i < this.detail.materials.length; i++) {
         if (this.detail.materials[i].id === id) {
           temObj = this.detail.materials[i]
         }
       }
+      // console.log(temObj)
+      if (!temObj.id) {
+        this.$notify({
+          title: '提示',
+          message: '该资料已被删除',
+          type: 'warning'
+        })
+        return
+      }
+
       if (temObj.fileSize === 0) {
         this.$notify({
           title: '提示',
@@ -2478,7 +2230,7 @@ export default {
         window.open(temObj.fileUrl)
       }
     },
-    delData(id) {
+    delData (id) {
       delMaterials(this.productId, id).then(res => {
         this.$notify({
           title: '成功',
@@ -2488,14 +2240,14 @@ export default {
         this.getMaterialsList()
       })
     },
-    exceed() {
+    exceed () {
       this.$notify({
         title: '注意',
         message: '文件只能单个上传',
         type: 'warning'
       })
     },
-    handleSuccess(res, file) {
+    handleSuccess (res, file) {
       const obj = {
         name: file.name,
         url: this.strategy.domain + res.key,
@@ -2513,9 +2265,13 @@ export default {
             message: '上传资料成功',
             type: 'success'
           })
-          // this.showfilelist = false
-          this.fileList = []
-          // this.$refs.upload.clearFiles()
+          // this.fileList = []
+          this.uniqueNum2--
+          if (this.uniqueNum2 == 0) {
+            // 说明全部文件都传完了
+            this.showfilelist = false
+          }
+
           this.materialsParam = []
           this.getMaterialsList()
           this.qiniuData.key = ''
@@ -2526,7 +2282,7 @@ export default {
           this.materialsParam = []
         })
     },
-    handleSuccess2(res, file) {
+    handleSuccess2 (res, file) {
       const obj = {
         name: file.name,
         url: this.strategy.domain + res.key,
@@ -2557,29 +2313,31 @@ export default {
         })
     },
     // 获取资料列表
-    getMaterialsList() {
+    getMaterialsList () {
       materialsList(this.productId).then(res => {
         this.detail.materials = res
         this.materialsNum = res.length
       })
     },
-    beforeUpload(file) {
+    beforeUpload (file) {
       this.uniqueNum++
+      this.uniqueNum2++
       // uniqueNum用来保证key的唯一性
+      // uniqueNum2用来分辨什么时候全部文件都传完
       const timestamp = new Date().getTime()
       // let key = `${this.uniqueNum}/${lastId}/${timestamp}/${file.name}`
       const key = `${this.uniqueNum}/${timestamp}/${file.name}`
       this.qiniuData.key = key
     },
     // 项目资料上传策略
-    getStrategy() {
+    getStrategy () {
       uploadStrategy().then(res => {
         this.strategy = res
         this.qiniuData.token = res.uploadToken
       })
     },
     // 确认选择
-    sureSelect() {
+    sureSelect () {
       const arr = []
       for (let i = 0; i < this.selectedMember.length; i++) {
         arr.push(this.selectedMember[i].id)
@@ -2625,7 +2383,7 @@ export default {
       }
     },
     // 取消选择
-    cancelSelect() {
+    cancelSelect () {
       if (this.selectForm1) {
         this.childTaskList[this.markIndex].visible = true
       } else {
@@ -2636,7 +2394,7 @@ export default {
       this.selectedMember = []
     },
     // 删除预选成员
-    delSelectId(id) {
+    delSelectId (id) {
       for (let i = 0; i < this.selectedMember.length; i++) {
         if (id === this.selectedMember[i].id) {
           this.selectedMember.splice(i, 1)
@@ -2644,7 +2402,7 @@ export default {
       }
     },
     // 添加成员的输入框选择1
-    treeCheck() {
+    treeCheck () {
       this.selectedMember = []
       // this.getCheckedNodes()
       const aa = this.$refs.tree.getCheckedNodes()
@@ -2665,18 +2423,18 @@ export default {
       }
     },
     // 树形控件过滤
-    filterNode(value, data) {
+    filterNode (value, data) {
       if (!value) return true
       return data.label.indexOf(value) !== -1
     },
     // 获取完整组织成员架构
-    getStructures() {
+    getStructures () {
       memberStructures().then(res => {
         this.memberStructures = res
       })
     },
     // 删除子任务
-    delTask(id) {
+    delTask (id) {
       delTask(this.productId, id).then(() => {
         this.$notify({
           title: '成功',
@@ -2688,17 +2446,17 @@ export default {
       })
     },
     // 展示从部门中获取成员框
-    getFromDepart(index) {
+    getFromDepart (index) {
       this.markIndex = index
       this.getStructures()
       this.selectForm1 = true
     },
     // 搜索成员
-    searchPerson() {
+    searchPerson () {
       this.getJoiner()
     },
     // 添加子任务
-    saveChildTask() {
+    saveChildTask () {
       const param = {
         name: this.childTaskName
       }
@@ -2714,7 +2472,7 @@ export default {
       })
     },
     // 设置子任务执行人
-    selectJoiner(index, executorId, subtaskId) {
+    selectJoiner (index, executorId, subtaskId) {
       // 选择的执行人id
       this.executorId = executorId
 
@@ -2735,7 +2493,7 @@ export default {
       })
     },
     // 获取参与人
-    getJoiner() {
+    getJoiner () {
       const param = {
         keyword: this.keyword
       }
@@ -2758,7 +2516,7 @@ export default {
       })
     },
     // 获取参与人2
-    getJoiner2() {
+    getJoiner2 () {
       const param = {
         keyword: this.keyword,
         includeMyself: false
@@ -2785,16 +2543,16 @@ export default {
       })
     },
     // 取消增加子任务
-    cancelAddTask() {
+    cancelAddTask () {
       this.preAddTask = false
     },
     // 准备添加子任务
-    addTask() {
+    addTask () {
       this.preAddTask = true
       this.childTaskName = ''
     },
     // 子任务列表
-    getTaskList() {
+    getTaskList () {
       taskList(this.productId).then(res => {
         for (let i = 0; i < res.length; i++) {
           res.visible = false
@@ -2810,7 +2568,7 @@ export default {
       })
     },
     // 更改开始日期
-    handleChange() {
+    handleChange () {
       const param = {
         startDateStr: this.startTime
       }
@@ -2819,7 +2577,7 @@ export default {
       })
     },
     // 更改结束日期
-    handleChange2() {
+    handleChange2 () {
       const param = {
         endDateStr: this.endTime
       }
@@ -2827,7 +2585,7 @@ export default {
         this.getNews(scrollTo)
       })
     },
-    getDetail() {
+    getDetail () {
       projectDetail(this.productId).then(res => {
         this.detail = res
         // 项目已完成但是未归档的情况，改变聊天框的高度
@@ -2842,7 +2600,7 @@ export default {
       })
     },
     // 切换more图标的显示
-    checkMore(index) {
+    checkMore (index) {
       if (index === 1) {
         this.moreValue = 2
       } else if (index === 2) {
@@ -2850,7 +2608,7 @@ export default {
       }
     },
     // 切换紧急程度
-    selectDegree(id) {
+    selectDegree (id) {
       this.degree = id
       const param = {
         urgencyDegree: this.degree
@@ -2865,7 +2623,7 @@ export default {
       })
     },
     // 选择是否公开
-    async selectPublic(index) {
+    async selectPublic (index) {
       if (index === 0) {
         this.publicValue = 1
         const param = {
@@ -2893,6 +2651,7 @@ export default {
         })
         this.getNews(scrollTo)
       } else if (index === 2) {
+        this.delDialog = false
         await archive(this.productId).then(res => {
           this.$notify({
             title: '成功',

@@ -1,12 +1,12 @@
 <template>
   <div class="navbar flex justify-between">
     <div class="navbarLeft flex align-center">
-      <img class="left1 pointer" src="@/assets/images/LOGO.svg" alt @click="backHome">
+      <img class="left1 pointer" src="@/assets/images/LOGO.svg" alt @click="backHome" />
 
       <div class="left3">BPM</div>
     </div>
     <div class="navbarRight flex align-center">
-      <router-link to="message"> <img src="../../assets/images/info.png" alt="" style="margin-right:70px"></router-link>
+      <router-link to="message"> <img src="../../assets/images/info.svg" alt="" style="margin-right:70px" /></router-link>
       <div v-if="$store.state.app.msgNum>0" class="count">{{ $store.state.app.msgNum>99?99:$store.state.app.msgNum }}</div>
       <el-popover
         v-model="showPanel"
@@ -18,25 +18,25 @@
         <div class="checkArea flex">
 
           <div class="checkItem flex justify-center flex-column" @click="goto(0)">
-            <img src="@/assets/images/BPM2.svg" alt="">
-            <div class=" Font333">Cloud BPM</div>
+            <img src="@/assets/images/BPM2.svg" alt="" />
+            <div class=" Font333">灵犀BPM</div>
           </div>
 
           <div class="checkItem flex justify-center flex-column" @click="goto(1)">
-            <img src="@/assets/images/knowledge2.svg" alt="">
-            <div class=" Font333">知识库</div>
+            <img src="@/assets/images/knowledge2.svg" alt="" />
+            <div class=" Font333">灵犀云平台</div>
           </div>
           <div v-if="hasPermission" class="checkItem flex justify-center flex-column" @click="goto(2)">
-            <img src="@/assets/images/organization2.svg" alt="">
+            <img src="@/assets/images/organization2.svg" alt="" />
             <div class=" Font333">组织架构</div>
           </div>
         </div>
-        <img slot="reference" class="left2" style="cursor:pointer" src="@/assets/images/category2.png" alt>
+        <img slot="reference" class="left2" style="cursor:pointer" src="@/assets/images/category2.svg" alt />
       </el-popover>
 
       <el-dropdown>
         <div class="flex align-center">
-          <img v-if="avatarUrl!==''" class="right2" :src="avatarUrl" alt>
+          <img v-if="avatarUrl!==''" class="right2" :src="avatarUrl" alt />
           <div v-if="avatarUrl==''" class="headImg">{{ headName }}</div>
           <div class="right3">{{ nickName }}</div>
         </div>

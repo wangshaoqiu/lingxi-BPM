@@ -159,11 +159,11 @@
             <el-popover v-model="item.visible" placement="right" width="200">
               <div class="options">
                 <div class="option option1 flex align-center" @click="addLink(index)">
-                  <img src="../../assets/images/nowLink.png" alt>
+                  <img src="../../assets/images/nowlink.svg" alt>
                   <div>在此后添加环节</div>
                 </div>
                 <div class="option option2 flex align-center" @click="addExecutor(index)">
-                  <img src="../../assets/images/executor.png" alt>
+                  <img src="../../assets/images/executor.svg" alt>
                   <div>添加节点审批人</div>
                 </div>
               </div>

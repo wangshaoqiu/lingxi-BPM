@@ -560,7 +560,7 @@ border-radius: 50%;
   <div class="page">
     <div class="navbar flex justify-between">
       <div class="navbarLeft flex align-center">
-        <img class="left1 pointer" src="../../assets/images/LOGO.svg" alt @click="backHome">
+        <img class="left1 pointer" src="../../assets/images/LOGO.svg" alt @click="backHome" />
 
         <div class="left3" style="margn">BPM</div>
         <div>
@@ -584,7 +584,7 @@ border-radius: 50%;
         </div>
       </div>
       <div class="navbarRight flex align-center">
-        <router-link to="message"> <img src="../../assets/images/info.png" alt="" class="mr30"></router-link>
+        <router-link to="message"> <img src="../../assets/images/info.svg" alt="" class="mr30" /></router-link>
         <div v-if="$store.state.app.msgNum>0" class="count">{{ $store.state.app.msgNum>99?99:$store.state.app.msgNum }}</div>
         <el-popover
           v-model="showPanel"
@@ -596,24 +596,24 @@ border-radius: 50%;
           <div class="checkArea flex">
 
             <div class="checkItem flex justify-center flex-column" @click="goto(0)">
-              <img src="@/assets/images/BPM2.svg" alt="">
-              <div class=" Font333">Cloud BPM</div>
+              <img src="@/assets/images/BPM2.svg" alt="" />
+              <div class=" Font333">灵犀BPM</div>
             </div>
 
             <div class="checkItem flex justify-center flex-column" @click="goto(1)">
-              <img src="@/assets/images/knowledge2.svg" alt="">
-              <div class=" Font333">知识库</div>
+              <img src="@/assets/images/knowledge2.svg" alt="" />
+              <div class=" Font333">灵犀云平台</div>
             </div>
             <div v-if="hasPermission" class="checkItem flex justify-center flex-column" @click="goto(2)">
-              <img src="@/assets/images/organization2.svg" alt="">
+              <img src="@/assets/images/organization2.svg" alt="" />
               <div class=" Font333">组织架构</div>
             </div>
           </div>
-          <img slot="reference" class="left2" style="cursor:pointer" src="@/assets/images/category2.png" alt>
+          <img slot="reference" class="left2" style="cursor:pointer" src="@/assets/images/category2.svg" alt />
         </el-popover>
         <el-dropdown>
           <div class="flex align-center">
-            <img v-if="avatarUrl!==''" class="right2" :src="avatarUrl" alt>
+            <img v-if="avatarUrl!==''" class="right2" :src="avatarUrl" alt />
             <div v-if="avatarUrl==''" class="headImg">{{ headName }}</div>
             <div class="right3">{{ nickName }}</div>
           </div>
@@ -640,7 +640,7 @@ border-radius: 50%;
                   @click="goDetail(sub.canView,sub.id)"
                 >
                   <div v-if="!sub.canView" class="mask">
-                    <img src="../../assets/images/lock.png" alt>
+                    <img src="../../assets/images/lock.png" alt />
                   </div>
                   <div v-if="sub.urgencyDegree==2" class="urgency" />
                   <div v-if="sub.urgencyDegree==3" class=" urgency urgency2" />
@@ -649,7 +649,7 @@ border-radius: 50%;
                     <div class="projectName flex align-center justify-between">
                       <div class="Font333 projectTitle" style="max-width:220px">{{ sub.name }}</div>
                       <div class="avatarArea flex">
-                        <img v-if="sub.executors.length>2" src="../../assets/images/more3.png" alt>
+                        <img v-if="sub.executors.length>2" src="../../assets/images/more3.png" alt />
                         <div v-for="(thd,thdIndex) in sub.executors.slice(0,2)" :key="thdIndex" class="avatar">
                           {{ thd.nickname }}
                         </div>
@@ -672,16 +672,16 @@ border-radius: 50%;
                         <img
                           v-if="sub.subtaskCnt>0"
                           style="margin-right:12px;"
-                          src="../../assets/images/task.png"
+                          src="../../assets/images/task.svg"
                           alt
-                        >
+                        />
                         <img
                           v-if="sub.messageCnt>0"
                           style="margin-right:12px;"
-                          src="../../assets/images/message.png"
+                          src="../../assets/images/message.svg"
                           alt
-                        >
-                        <img v-if="sub.materialCnt>0" src="../../assets/images/related2.png" alt>
+                        />
+                        <img v-if="sub.materialCnt>0" src="../../assets/images/related2.svg" alt />
                       </div>
                       <div v-if="sub.currStepStatus==2" class="status">待审核</div>
                       <div v-if="sub.currStepStatus==3" class="status2">被驳回</div>
@@ -695,9 +695,9 @@ border-radius: 50%;
       </div>
 
       <div class="filter flex align-center" @click.stop="checkFilterWrap">
-        <img src="../../assets/images/filter.png" alt>
+        <img src="../../assets/images/filter.svg" alt />
         <div class="Font666 font18">筛选</div>
-        <img src="../../assets/images/filter2.png" alt style="margin-left:5px;">
+        <img src="../../assets/images/filter2.png" alt style="margin-left:5px;" />
       </div>
     </div>
 
@@ -739,10 +739,10 @@ border-radius: 50%;
         <img
           v-if="showFromJoiner||participant!==''"
           class="ml15 pointer"
-          src="../../assets/images/delete3.png"
+          src="../../assets/images/delete3.svg"
           alt
           @click="delSelect"
-        >
+        />
       </div>
       <div class="flex align-center mt25">
         <div class="Font333 label">逾期任务：</div>
@@ -821,7 +821,7 @@ border-radius: 50%;
             v-if="projectParam.memberIds.indexOf(sub.id)>-1"
             src="../../assets/images/right.png"
             alt
-          >
+          />
         </div>
       </div>
       <div

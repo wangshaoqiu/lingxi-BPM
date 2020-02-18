@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>任务周期</title>
+    <desc>Created with Sketch.</desc>
+    <g id="任务周期" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g stroke="#999999">
+            <rect id="矩形" fill="#D8D8D8" x="8.5" y="4.5" width="1" height="5" rx="0.5"></rect>
+            <path d="M9.99694219,8.94530742 L10.0023301,8.94530742 C9.99935445,8.94530742 9.99694219,8.94289516 9.99694219,8.93991948 L9.99694251,8.93986111 L9.95210728,13.0780251 L9.94671934,13.0780251 C9.94969502,13.0780251 9.95210728,13.0804373 9.95210728,13.083413 L9.95210697,13.0834714 L9.99694219,8.94530742 Z" id="矩形复制" fill="#D8D8D8" transform="translate(9.974525, 11.011666) rotate(-225.000000) translate(-9.974525, -11.011666) "></path>
+            <circle id="椭圆形" cx="9" cy="9" r="8.5"></circle>
+        </g>
+        <rect id="矩形" x="0" y="0" width="18" height="18"></rect>
+    </g>
+</svg>
